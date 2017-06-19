@@ -34,12 +34,21 @@ interface N2wReadersInterface
 
 
     /**
-     * reads the first left most value of the packet ( i.e abc in 789, b = 8),
+     * reads the first middle value of the packet ( i.e abc in 789, b = 8),
      * the tens place value of a tri-character packet
      * @param $challenge_packet
      * @return mixed
      */
     public function getB($challenge_packet);
+
+
+    /**
+     * reads the first right most value of the packet ( i.e abc in 789, b = 8),
+     * the tens place value of a tri-character packet
+     * @param $challenge_packet
+     * @return mixed
+     */
+    public function getC($challenge_packet);
 
 
     /**
