@@ -173,6 +173,11 @@ class N2wReaders implements N2wReadersInterface
      * 700   hundreds and tens
      */
     const CHALLENGE_PACKET_SCHEMA_NZZ = 'NZZ';
+    /**
+     * challenge packet schema NZN ( 707: (a=>[1-9],b=>0,c=>[1-9]) )
+     * 901   hundreds and  ones
+     */
+    const CHALLENGE_PACKET_SCHEMA_NZN = 'NZN';
 
 
 
@@ -539,7 +544,7 @@ class N2wReaders implements N2wReadersInterface
             case self::CHALLENGE_PACKET_SCHEMA_NZZ:
                 $packet_name = $this->NZZSchemaReader($challenge_packet);
                 break;
-            // 707 , hundreds only
+            // 707 , hundreds and ones
             default :
                 // NZN
                 $packet_name = $this->NZNSchemaReader($challenge_packet);
