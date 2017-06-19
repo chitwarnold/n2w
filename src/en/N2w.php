@@ -87,5 +87,11 @@ class N2w
         900=>'nine hundred'
     ];
 
+    /**
+     * decimal separator
+     */
+    protected $decimal_separator = ".";
+
+
 
 } // N2w : close class
