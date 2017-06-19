@@ -37,6 +37,23 @@ class N2wReaders implements N2wReadersInterface
 
 
     /**
+     * the teens values of the arabic numerals
+     * allowing us to spell out the numbers in the tens place value positions, between 11 and 19.
+     */
+    private $teens = [
+        11=>'eleven',
+        12=>'twelve',
+        13=>'thirteen',
+        14=>'fourteen',
+        15=>'fifteen',
+        16=>'sixteen',
+        17=>'seventeen',
+        18=>'eighteen',
+        19=>'nineteen'
+    ];
+
+
+    /**
      * packet schema placeholder for 0(zero)
      */
     const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
