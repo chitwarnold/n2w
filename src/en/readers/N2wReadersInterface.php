@@ -24,6 +24,16 @@ interface N2wReadersInterface
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 
 
+    /**
+     * ZZZSchemaReader - reads schemata that is like 000 and resolves the words and returns that words
+     * called when a $challenge_packet looks like 000
+     * @param $challenge_packet
+     * @return string $packet_spelling - str of words representing the packet value
+     */
+     public function ZZZSchemaReader($challenge_packet);
+    
+
+
 
 
 }
