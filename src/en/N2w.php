@@ -26,38 +26,7 @@ use chitwarnold\n2w\en\readers\N2wReaders;
 class N2w
 {
 
-    /**
-     * decimal separator
-     */
-    protected $decimal_separator = ".";
 
-    /**
-     * thousands separator
-     */
-    protected $thousands_separator = ",";
-
-    /**
-     * decimal name
-     */
-    protected $decimal_separator_name = "point";
-
-    /**
-     * characteristic of challenge (the left side of the decimal)
-     */
-    private $characteristic = "";
-
-    /**
-     * mantisa of challenge (the left side of the decimal)
-     */
-    private $mantisa = "";
-    /**
-     * challenge packets ( available packets on this challenge)
-     */
-    private $challenge_packets = [];
-    /**
-     * solutions packets - store the packets that are used to spell the number.
-     */
-    private $solution_packets = [];
 
     /**
      * packet schema placeholder for 0(zero)

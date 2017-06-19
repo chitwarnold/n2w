@@ -98,6 +98,39 @@ class N2wReaders implements N2wReadersInterface
         6=> 'quintillion'
     );
 
+    /**
+     * decimal separator
+     */
+    protected $decimal_separator = ".";
+
+    /**
+     * thousands separator
+     */
+    protected $thousands_separator = ",";
+
+    /**
+     * decimal name
+     */
+    protected $decimal_separator_name = "point";
+
+    /**
+     * characteristic of challenge (the left side of the decimal)
+     */
+    private $characteristic = "";
+
+    /**
+     * mantisa of challenge (the left side of the decimal)
+     */
+    private $mantisa = "";
+    /**
+     * challenge packets ( available packets on this challenge)
+     */
+    private $challenge_packets = [];
+    /**
+     * solutions packets - store the packets that are used to spell the number.
+     */
+    private $solution_packets = [];
+
 
     /**
      * packet schema placeholder for 0(zero)
@@ -426,11 +459,67 @@ class N2wReaders implements N2wReadersInterface
         $z = "0";
         $ab = $a.$b;
         $bc = $b.$c;
-        $words;
+        $words = null;
         $words = $this->hundreds[(int)$a.$z.$z];
 
         //echo $words;
         return $words ;
     } // N2wReaders::NZZSchemaReader();
+
+
+#WORKHORSE
+    public function announcePacket($challenge_packet){
+        // schemata of intrest
+        $schema = $this->getPacketSchema($challenge_packet);
+        $packet_name;
+
+        // normalize the packet
+        $challenge_packet = $this->standard3LengthPacket($challenge_packet);
+
+        switch((string)$schema){
+            // 000
+            case 'ZZZ':
+                $packet_name = $this->ZZZSchemaReader($challenge_packet);
+                break;
+            // 001  ones
+            case 'ZZN':
+                $packet_name = $this->ZZNSchemaReader($challenge_packet);
+                break;
+            // 010,020,030,040,050,060,070,080,090
+            case 'ZNZ':
+                $packet_name = $this->ZNZSchemaReader($challenge_packet);
+                break;
+            // 099,015,070  usual two digit, teens and tens
+            case 'ZNN':
+                $packet_name = $this->ZNNSchemaReader($challenge_packet);
+                break;
+            // 789 usual 3 digit non zero anywhere packet
+            case 'NNN':
+                $packet_name = $this->NNNSchemaReader($challenge_packet);
+                break;
+            // 770 , hundreds and tens
+            case 'NNZ':
+                $packet_name = $this->NNZSchemaReader($challenge_packet);
+                break;
+            // 700 , hundreds only
+            case 'NZZ':
+                $packet_name = $this->NZZSchemaReader($challenge_packet);
+                break;
+            // 707 , hundreds only
+            default :
+                // NZN
+                $packet_name = $this->NZNSchemaReader($challenge_packet);
+                break;
+
+        } // close switch
+
+
+        //echo $packet_name;
+        return $packet_name;
+
+
+    } // announcePacket
+
+
 
 } // N2wReaders . close
