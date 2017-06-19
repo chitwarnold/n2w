@@ -1,4 +1,4 @@
-PHP Number to Words By Gomersol Technologies(http://gomersol.com)
+PHP Number to Words By Gomersol Technologies (http://gomersol.com)
 ==================================================================================================
 
 This library will allows you to spell various numeric values from 0 to 999,999,999,999.00 in the various languages. For now the library is only supporting the English Language.

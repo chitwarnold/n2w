@@ -1,0 +1,11 @@
+{
+  "name": "n2w",
+  "description": "PHP Library for Spelling Numbers into Words. Give it an integer value like 50, and it returns the words Fifty",
+  "type":"library",
+  "license": "BSD",
+  "version": "1.0.0",
+  "dependencies": {
+
+  },
+
+}
