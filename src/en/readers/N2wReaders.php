@@ -339,6 +339,31 @@ class N2wReaders implements N2wReadersInterface
         return $words ;
     } //  N2wReaders::NNNSchemaReader();
 
+    /**
+     * NNZSchemaReader -  called when a $challenge_packet looks like 770 (a,b,c)(a=>[1-9],b=>[1-9],c=>0)
+     * this is used to resolve triple digits with zero at c on the string
+     * @param $challenge_packet - the challenge packet string
+     * @return string -  string of words representing the packet value
+     */
+    public final function NNZSchemaReader($challenge_packet)
+    { // N2wReaders::NNZSchemaReader();
+        $c = $this->getC($challenge_packet);
+        $b = $this->getB($challenge_packet);
+        $a = $this->getA($challenge_packet);
+        $z = "0";
+        $ab = $a.$b;
+        $bc = $b.$c;
+        $words = null;
+
+        // means its an ordinary two digit
+
+        $ten_words = $this->tens[(int)$bc];
+        $hundred_words = $this->hundreds[(int)$a.$z.$z];
+        $words = $hundred_words." and ".$ten_words;
+
+        //echo $words;
+        return $words ;
+    } // N2wReaders::NNZSchemaReader();
 
 
 } // N2wReaders . close
