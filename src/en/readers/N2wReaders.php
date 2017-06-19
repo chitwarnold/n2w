@@ -37,12 +37,17 @@ class N2wReaders implements N2wReadersInterface
     } // N2wReaders::__construct();
 
 
-
+    /**
+     * factory for  initializing the reader in client code
+     * @return N2wReaders
+     */
     public final static function initializeReader()
     { // N2wReaders::initializeReader();
         return new N2wReaders();
     } // N2wReaders::initializeReader();
 
+
+# PACKET PROCESSING
 
     /**
      * zero fills all those packets that are shorter than  3 in length
@@ -167,7 +172,7 @@ class N2wReaders implements N2wReadersInterface
         return $c;
     } // N2wReaders::getC();
 
-
+#PACKET SCHEMATA
 
     /**
      * @param $challenge_packet - the challenge packet string
@@ -179,4 +184,16 @@ class N2wReaders implements N2wReadersInterface
         return $packet_spelling;
     }  // N2wReaders::ZZZSchemaReader();
 
-}
+
+    public final function ZZNSchemaReader($challenge_packet)
+    {
+        $c = $this->getC($challenge_packet);
+        $words = $this->ones[(int)$c];
+        return $words;
+        //return "";
+    }
+
+
+
+
+} // N2wReaders . close

@@ -65,8 +65,15 @@ interface N2wReadersInterface
      * @param $challenge_packet - the challenge packet string
      * @return string $packet_spelling - str of words representing the packet value
      */
-    function ZZZSchemaReader($challenge_packet);
+    public function ZZZSchemaReader($challenge_packet);
 
+    /**
+     * ZZNSchemaReader -  called when a $challenge_packet looks like 001 to 009 (a=>0,b=>0,c=>9)
+     *  this is used to resolve the ones
+     * @param $challenge_packet - the challenge packet string
+     * @return mixed
+     */
+    public function ZZNSchemaReader($challenge_packet)
 
 
 
