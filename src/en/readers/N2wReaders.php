@@ -153,6 +153,11 @@ class N2wReaders implements N2wReadersInterface
      * 010,020,030,040,050,060,070,080,090,
      */
     const CHALLENGE_PACKET_SCHEMA_ZNZ = 'ZNZ';
+    /**
+     * challenge packet schema ZNN ( 019: (a=>0,b=>[1-9],c=>[1-9]) )
+     * 099,015,070  usual two digit, teens and tens
+     */
+    const CHALLENGE_PACKET_SCHEMA_ZNN = 'ZNN';
 
 
 
@@ -500,11 +505,11 @@ class N2wReaders implements N2wReadersInterface
                 $packet_name = $this->ZZNSchemaReader($challenge_packet);
                 break;
             // 010,020,030,040,050,060,070,080,090, 'ZNZ'
-            case 'ZNZ':
+            case self::CHALLENGE_PACKET_SCHEMA_ZNZ:
                 $packet_name = $this->ZNZSchemaReader($challenge_packet);
                 break;
-            // 099,015,070  usual two digit, teens and tens
-            case 'ZNN':
+            // 099,015,070  usual two digit, teens and tens ,'ZNN'
+            case self::CHALLENGE_PACKET_SCHEMA_ZNN:
                 $packet_name = $this->ZNNSchemaReader($challenge_packet);
                 break;
             // 789 usual 3 digit non zero anywhere packet
