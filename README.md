@@ -1,10 +1,15 @@
-PHP Africas Talking Web Services APIs \[unofficial\] By Gomersol Technologies(http://gomersol.com)
+PHP Number to Words By Gomersol Technologies(http://gomersol.com)
 ==================================================================================================
 
-This is the code for consuming the web services for [Africas Talking](https://africastalking.com). 
-The Web Services allow you to access their products namely Payments,SMS,Voice,USSD,Airtime through the exposed API's in a standardized fashion.
-Please submit issue reports and pull requests to the repository.
+This library will allows you to spell various numeric values from 0 to 999,999,999,999.00 in the various languages. For now the library is only supporting the English Language.
+In the next few monts we hope to add support for Swahili,French, German, Spanish.
+
+The library was prepared to help with displaying the spelling of various numbers when printing on cheques. Please highlight other use cases on the comments and submits any issues
+you get while using this library. Godspeed.
+
 For license information check the [LICENSE](LICENSE.md)-file.
+
+You can also access some of my other repositories on my [Packagist Profile](https://packagist.org/packages/chitwarnold/). 
 
 Installation
 ------------
@@ -14,7 +19,7 @@ The preferred way to install this library is through [composer](http://getcompos
 Either run
 
 ```
-composer require chitwarnold/ais
+composer require chitwarnold/n2w
 ```
 
 or add
