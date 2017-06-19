@@ -211,12 +211,14 @@ class N2w
 
     /**
      * removes the buggy "and on some strings"
+     * @param integer $challenge - start position of and concatenator, where to begin the clean up from.
+     * @return  string $remaining - the modulus string after removing the And concatenation
      */
     private function eliminateAnd($challenge)
     { // N2w::eliminateAnd();
         $and_pos = strpos($challenge, 'and',0);
 
-        $remaining;
+        $remaining = "";
 
         if($and_pos){
             $remaining = substr($challenge, 4);
@@ -225,9 +227,26 @@ class N2w
         }
 
         return $remaining;
-        //$returned = explode('', $challenge,2);
-        //var_dump($returned);
+
     } // N2w::eliminateAnd();
+
+
+    /**
+     * zero fills all those packets that are shorter than  3 in length
+     * @param $challenge_packet - the packet that requires to be zero filled
+     * @return string $new_str - the zero filled,(left padded) packet
+     */
+    private final function zeroFiller($challenge_packet)
+    {// N2w::zeroFiller();
+        $new_str = "";
+        if(strlen($challenge_packet) === 2){
+            $new_str = "0".$challenge_packet;
+        }else{
+            $new_str = "00".$challenge_packet;
+        }
+
+        return $new_str;
+    } // N2w::zeroFiller();
 
 
 } // N2w : close class
