@@ -182,6 +182,8 @@ class N2w
 
     /**
      * iterates throught the challenge packets creating a solution packet
+     * allowing us to resolve the packet schemata,the class)name, the words,
+     *  and to check the success of the operation
      * @return void
      */
     public function solveChallengePackets()
@@ -206,6 +208,26 @@ class N2w
 
 
     } // N2w::solveChallengePackets();
+
+    /**
+     * removes the buggy "and on some strings"
+     */
+    private function eliminateAnd($challenge)
+    { // N2w::eliminateAnd();
+        $and_pos = strpos($challenge, 'and',0);
+
+        $remaining;
+
+        if($and_pos){
+            $remaining = substr($challenge, 4);
+        }else{
+            $remaining = $challenge;
+        }
+
+        return $remaining;
+        //$returned = explode('', $challenge,2);
+        //var_dump($returned);
+    } // N2w::eliminateAnd();
 
 
 } // N2w : close class
