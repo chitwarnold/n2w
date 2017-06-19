@@ -52,6 +52,23 @@ class N2wReaders implements N2wReadersInterface
         19=>'nineteen'
     ];
 
+    /**
+     * the tens values of the arabic numerals
+     * allowing us to spell out the numbers in the tens place value positions, factors of ten close
+     */
+    private $tens = [
+        10=>'ten',
+        20=>'twenty',
+        30=>'thirty',
+        40=>'fourty',
+        50=>'fifty',
+        60=>'sixty',
+        70=>'seventy',
+        80=>'eighty',
+        90=>'ninety'
+    ];
+
+
 
     /**
      * packet schema placeholder for 0(zero)
