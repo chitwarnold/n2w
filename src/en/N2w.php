@@ -121,5 +121,15 @@ class N2w
     private $solution_packets = [];
 
 
+    /**
+     * N2w constructor.
+     * @param $challenge
+     * @param int $desired_decimal_points
+     */
+    public function __construct($challenge,$desired_decimal_points=2)
+    { // N2w::__construct();
+
+    } //  N2w::__construct();
+
 
 } // N2w : close class
