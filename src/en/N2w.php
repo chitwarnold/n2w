@@ -25,8 +25,10 @@ use chitwarnold\n2w\en\readers\N2wReaders;
 
 class N2w
 {
-
-
+    /**
+     * @var the challenge for the day
+     */
+    public $challenge;
 
     /**
      * packet schema placeholder for 0(zero)
@@ -59,8 +61,9 @@ class N2w
      */
     public function __construct($challenge,$desired_decimal_points=2)
     { // N2w::__construct();
-
-        $this->sanitizeChallenge($challenge,$desired_decimal_points);
+        // sets a reader
+        $_reader = new N2wReaders();
+        $this->setReader($_reader);
 
     } //  N2w::__construct();
 
