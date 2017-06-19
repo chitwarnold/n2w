@@ -99,6 +99,10 @@ class N2w
      * decimal name
      */
     protected $decimal_separator_name = "point";
+    /**
+     * characteristic of challenge (the left side of the decimal)
+     */
+    private $characteristic = "";
 
 
 } // N2w : close class
