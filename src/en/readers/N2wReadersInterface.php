@@ -71,11 +71,16 @@ interface N2wReadersInterface
      * ZZNSchemaReader -  called when a $challenge_packet looks like 001 to 009 (a=>0,b=>0,c=>9)
      *  this is used to resolve the ones
      * @param $challenge_packet - the challenge packet string
-     * @return mixed
+     * @return string - string of words representing the packet value
      */
     public function ZZNSchemaReader($challenge_packet);
 
-
-
+    /**
+     * ZNNSchemaReader -  called when a $challenge_packet looks like 061,011,060 (a=>0,b=>[0-9],c=>[0-9])
+     * this is used to resolve the tens,teens and the rest of double digits
+     * @param $challenge_packet - the challenge packet string
+     * @return string -  string of words representing the packet value
+     */
+    public function ZNNSchemaReader($challenge_packet);
 
 }
