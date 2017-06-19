@@ -32,6 +32,10 @@ class N2w
      * decimal point to be be allocated
      */
     public $desired_decimal_points  = 2;
+    /**
+     * spelling returned
+     */
+    private $_spelling = "";
 
     /**
      * packet schema placeholder for 0(zero)
@@ -106,10 +110,12 @@ class N2w
      * show off the  you can spell
      */
     private function getSpelling()
-    {
+    { // N2w::getSpelling();
         // get the reader
         $_reader = $this->_reader;
-    }
+        $this->_spelling = $_reader->spell($this->challenge,$this->desired_decimal_points);
+        return $this->_spelling;
+    } //  N2w::getSpelling();
 
     /**
      * solves and returns the number of the spelling
