@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="075e8e96-b3f8-42c1-a1a6-564d8b32f8b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/en/N2w.php" afterPath="$PROJECT_DIR$/src/en/N2w.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,55 +13,73 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="267" column="37" lean-forward="false" selection-start-line="267" selection-start-column="37" selection-end-line="267" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cgtnumbertowords.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="393" column="4" lean-forward="false" selection-start-line="393" selection-start-column="4" selection-end-line="408" selection-end-column="6" />
-              <folding>
-                <marker date="1497900549853" expanded="true" signature="18771:18777" ph="..." />
-                <marker date="1497900549853" expanded="true" signature="18796:18832" ph="..." />
-                <marker date="1497900549853" expanded="true" signature="18860:18896" ph="..." />
-                <marker date="1497900549853" expanded="true" signature="19010:19016" ph="..." />
-                <marker date="1497900549853" expanded="true" signature="19066:19102" ph="..." />
-                <marker date="1497900549853" expanded="true" signature="19165:19201" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="N2wException.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/en/N2wException.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/composer.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-15">
+                  <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cgtnumbertowords.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="393" column="4" lean-forward="false" selection-start-line="393" selection-start-column="4" selection-end-line="408" selection-end-column="6" />
+                  <folding>
+                    <marker date="1497900549853" expanded="true" signature="18771:18777" ph="..." />
+                    <marker date="1497900549853" expanded="true" signature="18796:18832" ph="..." />
+                    <marker date="1497900549853" expanded="true" signature="18860:18896" ph="..." />
+                    <marker date="1497900549853" expanded="true" signature="19010:19016" ph="..." />
+                    <marker date="1497900549853" expanded="true" signature="19066:19102" ph="..." />
+                    <marker date="1497900549853" expanded="true" signature="19165:19201" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="N2wException.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/en/N2wException.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-44">
+                  <caret line="258" column="63" lean-forward="false" selection-start-line="258" selection-start-column="63" selection-end-line="258" selection-end-column="63" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -256,12 +273,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="6473000" />
+      <workItem from="1497894971724" duration="6672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6473000" />
+    <option name="totallyTimeSpent" value="6672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -346,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="267" column="37" lean-forward="false" selection-start-line="267" selection-start-column="37" selection-end-line="267" selection-end-column="37" />
+        <state relative-caret-position="-15">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding />
         </state>
       </provider>

@@ -8,6 +8,8 @@
 
 namespace chitwarnold\n2w\en;
 
+use chitwarnold\n2w\en\N2wException;
+
 
 /**
  *  This service allows for the  generation of english words that refer to numbers
@@ -250,13 +252,15 @@ class N2w
 
 
     /**
-     * resolves packet schemata
+     * resolves packet schemata :
+     * allowing for the resolving of the schemata of a packet, by going through each character in the packet
      * @param str $challenge_token - a string Token to be resolved to a schema value . i.e all (int)0 => Z and the rest of the numbers resolve to Z
      * @return str $token - a string token for the   given value
+     * @todo implement the Exception Class instead of the exit;
      */
     public function resolveSchemataToken($challenge_token)
     { // N2w::resolveSchemataToken();
-        $token;
+        $token = "";
         if(is_numeric($challenge_token) && (int)$challenge_token === 0){
             $token = "Z";
         }else if(is_numeric($challenge_token) && (int)$challenge_token !== 0  ){
