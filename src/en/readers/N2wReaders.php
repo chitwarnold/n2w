@@ -144,7 +144,10 @@ class N2wReaders implements N2wReadersInterface
      * challenge packet schema ZZZ ( 000 )
      */
     const CHALLENGE_PACKET_SCHEMA_ZZZ = 'ZZZ';
-
+    /**
+     * challenge packet schema ZZZ ( 001: (a=>0,b=>0,c=>[1-9]) )
+     */
+    const CHALLENGE_PACKET_SCHEMA_ZZN = 'ZZN';
 
 
 
