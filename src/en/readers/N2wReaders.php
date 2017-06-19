@@ -313,6 +313,32 @@ class N2wReaders implements N2wReadersInterface
 
     } // N2wReaders::ZZNSchemaReader();
 
+    /**
+     * NNNSchemaReader -  called when a $challenge_packet looks like 789 (a,b,c)(a=>[1-9],b=>[1-9],c=>[1-9])
+     * this is used to resolve the tens,teens and the rest of double digits
+     * @param $challenge_packet - the challenge packet string
+     * @return string $words -  string of words representing the packet value
+     */
+    public final function NNNSchemaReader($challenge_packet)
+    { //N2wReaders::NNNSchemaReader();
+        $c = $this->getC($challenge_packet);
+        $b = $this->getB($challenge_packet);
+        $a = $this->getA($challenge_packet);
+        $z = "0";
+        $words = null;
+
+        // means its an ordinary two digit
+        $once_words = $this->ones[(int)$c];
+        $ten_words = $this->tens[(int)$b.$z];
+        $hundred_words = $this->hundreds[(int)$a.$z.$z];
+        $words = $hundred_words." and ".$ten_words." ".$once_words;
+
+
+
+        //echo $words;
+        return $words ;
+    } //  N2wReaders::NNNSchemaReader();
+
 
 
 } // N2wReaders . close
