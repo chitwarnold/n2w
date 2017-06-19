@@ -91,6 +91,10 @@ class N2w
      * decimal separator
      */
     protected $decimal_separator = ".";
+    /**
+     * thousands separator
+     */
+    protected $thousands_separator = ",";
 
 
 
