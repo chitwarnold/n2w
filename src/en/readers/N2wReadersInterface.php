@@ -83,4 +83,12 @@ interface N2wReadersInterface
      */
     public function ZNNSchemaReader($challenge_packet);
 
-}
+    /**
+     * NNNSchemaReader -  called when a $challenge_packet looks like 789 (a,b,c)(a=>[1-9],b=>[1-9],c=>[1-9])
+     * this is used to resolve the tens,teens and the rest of double digits
+     * @param $challenge_packet - the challenge packet string
+     * @return string -  string of words representing the packet value
+     */
+    public function NNNSchemaReader($challenge_packet);
+
+} // N2wReadersInterface . close

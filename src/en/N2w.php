@@ -26,13 +26,6 @@ use chitwarnold\n2w\en\readers\N2wReaders;
 class N2w
 {
 
-
-
-
-
-
-
-
     /**
      * decimal separator
      */

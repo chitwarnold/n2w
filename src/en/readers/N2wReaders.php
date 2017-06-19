@@ -84,6 +84,20 @@ class N2wReaders implements N2wReadersInterface
         900=>'nine hundred'
     ];
 
+    /**
+     * class multipliers
+     * @link https://en.wikipedia.org/wiki/Names_of_large_numbers
+     */
+    private $class_multipliers = array(
+        0=>'hundred', // 100 - 999 [ covers numbers with 1 packet]
+        1=>'thousand', // 100,000 - 999,000 [ covers numbers with 2 packet]
+        2=>'million', // 1,000,000 - 999,000,000 [ covers numbers with 3 packet]
+        3=> 'billion', // 1,000,000,000 - 999,999,999,999 [ covers numbers with 4 packet]
+        4=> 'trillion', // 1,000,000,000,000 - 999,999,999,999,999 [ covers numbers with 5 packet]
+        5=> 'quadrillion',
+        6=> 'quintillion'
+    );
+
 
     /**
      * packet schema placeholder for 0(zero)
