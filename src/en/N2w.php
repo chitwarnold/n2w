@@ -111,6 +111,10 @@ class N2w
      * mantisa of challenge (the left side of the decimal)
      */
     private $mantisa = "";
+    /**
+     * challenge packets ( available packets on this challenge)
+     */
+    private $challenge_packets = array();
 
 
 
