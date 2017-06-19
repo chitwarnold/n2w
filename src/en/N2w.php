@@ -75,19 +75,6 @@ class N2w
         $this->_reader = $packet_reader_class;
     } // N2w::setReader();
 
-    /**
-     * cleans the input that its given, by giving it the desired decimal points and then buiding a characteristic and mantisa
-     * @param $challenge - a string that can be cast to a floating point number  to be resolved to words
-     * @param integer $desired_decimal_points - desired number of decimal places
-     * @return void
-     */
-    private final function sanitizeChallenge($challenge,$desired_decimal_points=2)
-    { // N2w::sanitizeChallenge();
-        $new_value =  number_format($challenge,$desired_decimal_points);
-        $_char_mantisa = explode($this->decimal_separator, (string)$new_value);
-        $this->characteristic = $_char_mantisa[0];
-        $this->mantisa = $_char_mantisa[1];
-    } // N2w::sanitizeChallenge();
 
 
     /**
@@ -105,98 +92,6 @@ class N2w
         return new N2w($challenge,$desired_decimal_points);
     } // N2w::factory();
 
-
-    /**
-     * generates the packets array for the  characteristic of the this object
-     * allowing us to  know the place value character width  for the charactericts
-     * @return void
-     */
-    public function genPackets()
-    { // N2w::genPackets();
-
-        $_packets = explode($this->thousands_separator, $this->characteristic);
-        $this->challenge_packets['raw_packets_r'] = $_packets;
-        $_packets_r = array_reverse($_packets);
-        // build the dynamic schema of challenge_packets
-        for($i=0; $i<count($_packets); $i++){
-            $this->challenge_packets['refined_packets_r'][$this->class_multipliers[$i]] = $_packets_r[$i];
-        }
-
-    } // N2w::genPackets();
-
-    /**
-     * iterates throught the challenge packets creating a solution packet
-     * allowing us to resolve the packet schemata,the class)name, the words,
-     *  and to check the success of the operation
-     * @return void
-     */
-    public function solveChallengePackets()
-    {//N2w::solveChallengePackets();
-        /**
-         *  take in the key and value for each,
-         *  read create schemas
-         *  call approriate methods
-         *  then get the strings
-         *
-         */
-
-        foreach($this->challenge_packets['refined_packets_r'] as $key=>$val){
-            //echo "<br /> $key => $val";
-            $this->solution_packets[$key]['challenge'] = $val;
-            $this->solution_packets[$key]['class_name'] = $key;
-            $this->solution_packets[$key]['schema'] = $this->getPacketSchema($val);
-            $this->solution_packets[$key]['words'] = $this->announcePacket($val);
-            $this->solution_packets[$key]['resolved'] = ($this->announcePacket($val))? true:false;
-
-        }
-
-
-    } // N2w::solveChallengePackets();
-
-    /**
-     * removes the buggy "and on some strings"
-     * @param integer $challenge - start position of and concatenator, where to begin the clean up from.
-     * @return  string $remaining - the modulus string after removing the And concatenation
-     */
-    private function eliminateAnd($challenge)
-    { // N2w::eliminateAnd();
-        $and_pos = strpos($challenge, 'and',0);
-
-        $remaining = "";
-
-        if($and_pos){
-            $remaining = substr($challenge, 4);
-        }else{
-            $remaining = $challenge;
-        }
-
-        return $remaining;
-
-    } // N2w::eliminateAnd();
-
-
-
-
-
-    /**
-     * resolves packet schemata :
-     * allowing for the resolving of the schemata of a packet, by going through each character in the packet
-     * @param str $challenge_token - a string Token to be resolved to a schema value . i.e all (int)0 => Z and the rest of the numbers resolve to Z
-     * @return str $token - a string token for the   given value
-     * @todo implement the Exception Class instead of the exit;
-     */
-    public function resolveSchemataToken($challenge_token)
-    { // N2w::resolveSchemataToken();
-        $token = "";
-        if(is_numeric($challenge_token) && (int)$challenge_token === 0){
-            $token = self::PACKET_SCHEMA_PLACEHOLDER_ZERO;
-        }else if(is_numeric($challenge_token) && (int)$challenge_token !== 0  ){
-            $token = self::PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER;
-        }else{
-            exit('you must provide a numeric value to proceed');
-        }
-        return  $token;
-    } // N2w::resolveSchemataToken();
 
 
 } // N2w : close class
