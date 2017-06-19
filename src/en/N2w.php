@@ -24,7 +24,7 @@ class N2w
 {
     /**
      * the ones values of the arabic numerals
-     * allowing us to spell out the numbers in the ones place value position.
+     * allowing us to spell out the numbers in the ones place value positions.
      */
     private $ones = [
         0=>'',
