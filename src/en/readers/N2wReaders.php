@@ -379,7 +379,7 @@ class N2wReaders implements N2wReadersInterface
         $z = "0";
         $ab = $a.$b;
         $bc = $b.$c;
-        $words;
+        $words = null;
 
         // means its an ordinary two digit
         $once_words = $this->ones[(int)$c];

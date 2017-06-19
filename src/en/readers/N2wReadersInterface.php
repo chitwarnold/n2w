@@ -107,4 +107,12 @@ interface N2wReadersInterface
      */
     public function NZNSchemaReader($challenge_packet);
 
+    /**
+     * ZNZSchemaReader - called when a $challenge_packet looks like 070 (a,b,c) (a=>0,b=>[1-9],c=>0)
+     * this is used to resolve tens
+     * @param $challenge_packet - the challenge packet string
+     * @return string -  string of words representing the packet value
+     */
+    public function ZNZSchemaReader($challenge_packet);
+
 } // N2wReadersInterface . close
