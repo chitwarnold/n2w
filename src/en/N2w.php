@@ -289,5 +289,41 @@ class N2w
         return  $token;
     } // N2w::resolveSchemataToken();
 
+    /**
+     * @param $challenge_packet
+     * @return string
+     */
+    public function getPacketSchema($challenge_packet)
+    {N2w::getPacketSchema();
+        /**
+         * 789 , a->7 , b -> 8 , c -> 9
+         */
+
+
+        $_length_3_packet;
+        $a;
+        $b;
+        $c;
+        $_packet_schema ="";
+        if(strlen($challenge_packet) !== 3){
+            $_length_3_packet = $this->zeroFiller($challenge_packet);
+        }else{
+            $_length_3_packet = $challenge_packet;
+        }
+        $a = substr($_length_3_packet,0,1);
+        $b = substr($_length_3_packet,1,1);
+        $c = substr($_length_3_packet,2,1);
+
+        // resolving the schema for the three tokens
+        $_packet_schema .= $this->resolveSchemataToken($a);
+        $_packet_schema .= $this->resolveSchemataToken($b);
+        $_packet_schema .= $this->resolveSchemataToken($c);
+
+        //echo "<br /> a : $a , <br /> b : $b , <br /> c : $c , <br /> schema  : $_packet_schema";
+        return $_packet_schema;
+
+
+    } //  N2w::getPacketSchema();
+
 
 } // N2w : close class

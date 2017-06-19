@@ -29,8 +29,8 @@
           <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="131" column="51" lean-forward="false" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="51" />
+                <state relative-caret-position="165">
+                  <caret line="130" column="7" lean-forward="true" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -39,8 +39,8 @@
           <file leaf-file-name="cgtnumbertowords.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="393" column="4" lean-forward="false" selection-start-line="393" selection-start-column="4" selection-end-line="408" selection-end-column="6" />
+                <state relative-caret-position="30">
+                  <caret line="388" column="26" lean-forward="true" selection-start-line="359" selection-start-column="5" selection-end-line="388" selection-end-column="26" />
                   <folding>
                     <marker date="1497900549853" expanded="true" signature="18771:18777" ph="..." />
                     <marker date="1497900549853" expanded="true" signature="18796:18832" ph="..." />
@@ -70,8 +70,8 @@
           <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="91">
-                  <caret line="279" column="9" lean-forward="true" selection-start-line="279" selection-start-column="9" selection-end-line="279" selection-end-column="37" />
+                <state relative-caret-position="155">
+                  <caret line="293" column="21" lean-forward="false" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -273,12 +273,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="7019000" />
+      <workItem from="1497894971724" duration="7155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7019000" />
+    <option name="totallyTimeSpent" value="7155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -348,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="393" column="4" lean-forward="false" selection-start-line="393" selection-start-column="4" selection-end-line="408" selection-end-column="6" />
+        <state relative-caret-position="30">
+          <caret line="388" column="26" lean-forward="true" selection-start-line="359" selection-start-column="5" selection-end-line="388" selection-end-column="26" />
           <folding>
             <marker date="1497900549853" expanded="true" signature="18771:18777" ph="..." />
             <marker date="1497900549853" expanded="true" signature="18796:18832" ph="..." />
@@ -363,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="279" column="9" lean-forward="true" selection-start-line="279" selection-start-column="9" selection-end-line="279" selection-end-column="37" />
+        <state relative-caret-position="155">
+          <caret line="293" column="21" lean-forward="false" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
           <folding />
         </state>
       </provider>
