@@ -163,7 +163,8 @@ class N2w
 
 
     /**
-     * generates the packets array for the  characteristic of the object
+     * generates the packets array for the  characteristic of the this object
+     * allowing us to  know the place value character width  for the charactericts
      * @return void
      */
     public function genPackets()
@@ -178,6 +179,33 @@ class N2w
         }
 
     } // N2w::genPackets();
+
+    /**
+     * iterates throught the challenge packets creating a solution packet
+     * @return void
+     */
+    public function solveChallengePackets()
+    {//N2w::solveChallengePackets();
+        /**
+         *  take in the key and value for each,
+         *  read create schemas
+         *  call approriate methods
+         *  then get the strings
+         *
+         */
+
+        foreach($this->challenge_packets['refined_packets_r'] as $key=>$val){
+            //echo "<br /> $key => $val";
+            $this->solution_packets[$key]['challenge'] = $val;
+            $this->solution_packets[$key]['class_name'] = $key;
+            $this->solution_packets[$key]['schema'] = $this->getPacketSchema($val);
+            $this->solution_packets[$key]['words'] = $this->announcePacket($val);
+            $this->solution_packets[$key]['resolved'] = ($this->announcePacket($val))? true:false;
+
+        }
+
+
+    } // N2w::solveChallengePackets();
 
 
 } // N2w : close class
