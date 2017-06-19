@@ -37,6 +37,13 @@ class N2wReaders implements N2wReadersInterface
     } // N2wReaders::__construct();
 
 
+
+    public final static function initializeReader()
+    { // N2wReaders::initializeReader();
+        return new N2wReaders();
+    } // N2wReaders::initializeReader();
+
+
     /**
      * zero fills all those packets that are shorter than  3 in length
      * @param $challenge_packet - the packet that requires to be zero filled
