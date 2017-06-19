@@ -29,8 +29,8 @@
           <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5">
-                  <caret line="126" column="68" lean-forward="false" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
+                <state relative-caret-position="350">
+                  <caret line="136" column="36" lean-forward="true" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -94,8 +94,8 @@
           <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="199">
-                  <caret line="117" column="29" lean-forward="false" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+                <state relative-caret-position="215">
+                  <caret line="77" column="20" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -360,12 +360,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="19924000" />
+      <workItem from="1497894971724" duration="20217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19924000" />
+    <option name="totallyTimeSpent" value="20217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -485,8 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="117" column="29" lean-forward="false" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+        <state relative-caret-position="215">
+          <caret line="77" column="20" lean-forward="true" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -62,17 +62,10 @@ class N2w
 
 
     /**
-     * N2w constructor.
-     * @param numeric $challenge - a string that can be cast to a floating point number  to be resolved to words
-     * @param int $desired_decimal_points - desired number of decimal places
+     * N2w constructor., assumes that native reader will be used and just calls it.
      */
-    public function __construct($challenge,$desired_decimal_points=2)
+    public function __construct()
     { // N2w::__construct();
-
-        // set the challenge
-        $this->challenge = strlen($challenge) > 0 && is_numeric($challenge) ? $challenge : time();
-        $this->desired_decimal_points = $desired_decimal_points;
-
         // sets a reader
         $_reader = new N2wReaders();
         $this->setReader($_reader);
@@ -119,6 +112,12 @@ class N2w
 
     /**
      * solves and returns the number of the spelling
+     */
+
+    /**
+     * @param numeric $challenge - a string that can be cast to a floating point number  to be resolved to words
+     * @param int $desired_decimal_points - desired number of decimal places
+     * @return string
      */
      public function solve($challenge,$desired_decimal_points)
      { // N2w::solve();
