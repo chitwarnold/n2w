@@ -29,8 +29,8 @@
           <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="21" />
+                <state relative-caret-position="165">
+                  <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
                   <folding>
                     <element signature="e#117#153#0#PHP" expanded="true" />
                   </folding>
@@ -97,10 +97,10 @@
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-105">
-                  <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+                  <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
                   <folding>
                     <element signature="e#117#153#0#PHP" expanded="true" />
-                    <marker date="1497914307626" expanded="true" signature="2064:2090" ph=" n2w factory method ..." />
+                    <marker date="1497914369011" expanded="true" signature="2161:2187" ph=" n2w factory method ..." />
                   </folding>
                 </state>
               </provider>
@@ -365,12 +365,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="18857000" />
+      <workItem from="1497894971724" duration="18916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18857000" />
+    <option name="totallyTimeSpent" value="18916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -491,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="165">
+          <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding>
             <element signature="e#117#153#0#PHP" expanded="true" />
           </folding>

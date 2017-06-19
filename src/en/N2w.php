@@ -29,6 +29,10 @@ class N2w
      * @var the challenge for the day
      */
     public $challenge;
+    /**
+     * decimal point to be be allocated
+     */
+    public $desired_decimal_points  = 2;
 
     /**
      * packet schema placeholder for 0(zero)
