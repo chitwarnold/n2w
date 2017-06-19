@@ -280,9 +280,9 @@ class N2w
     { // N2w::resolveSchemataToken();
         $token = "";
         if(is_numeric($challenge_token) && (int)$challenge_token === 0){
-            $token = "Z";
+            $token = self::PACKET_SCHEMA_PLACEHOLDER_ZERO;
         }else if(is_numeric($challenge_token) && (int)$challenge_token !== 0  ){
-            $token = "N";
+            $token = self::PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER;
         }else{
             exit('you must provide a numeric value to proceed');
         }
