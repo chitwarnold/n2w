@@ -27,6 +27,27 @@ class N2wReaders implements N2wReadersInterface
      */
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 
+
+    /**
+     * buildts a standard 3 charactered packets
+     * @param $challenge_packet
+     * @return string $_length_3_packet -  3 character string
+     */
+    private final function buildStandard3LengthPacket($challenge_packet)
+    { // N2wReaders::buildStandard3LengthPacket();
+        $_length_3_packet = "";
+        if(strlen($challenge_packet) !== 3){
+            $_length_3_packet = $this->zeroFiller($challenge_packet);
+        }else{
+            $_length_3_packet = $challenge_packet;
+        }
+        return $_length_3_packet;
+    } // N2wReaders::buildStandard3LengthPacket();
+
+
+
+
+
     /**
      * gets the value on the hundreds' place value
      * @param $challenge_packet - the  challenge packet has got to  have a length of 3

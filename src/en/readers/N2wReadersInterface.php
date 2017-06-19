@@ -24,6 +24,11 @@ interface N2wReadersInterface
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 
 
+
+
+
+
+
     /**
      * reads the first left most value of the packet ( i.e abc in 789, a = 7),
      * the hundreds place value of tri-character packet
@@ -49,6 +54,9 @@ interface N2wReadersInterface
      * @return mixed
      */
     public function getC($challenge_packet);
+
+
+
 
 
     /**
