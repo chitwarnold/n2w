@@ -122,6 +122,20 @@ class N2w
      */
     private $solution_packets = [];
 
+    /**
+     * packet schema placeholder for 0(zero)
+     */
+    const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
+
+
+
+
+
+
+
+
+
+
 
     /**
      * N2w constructor.
