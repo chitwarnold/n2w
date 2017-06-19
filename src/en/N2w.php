@@ -91,18 +91,27 @@ class N2w
      * decimal separator
      */
     protected $decimal_separator = ".";
+
     /**
      * thousands separator
      */
     protected $thousands_separator = ",";
+
     /**
      * decimal name
      */
     protected $decimal_separator_name = "point";
+
     /**
      * characteristic of challenge (the left side of the decimal)
      */
     private $characteristic = "";
+
+    /**
+     * mantisa of challenge (the left side of the decimal)
+     */
+    private $mantisa = "";
+
 
 
 } // N2w : close class
