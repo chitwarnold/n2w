@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="075e8e96-b3f8-42c1-a1a6-564d8b32f8b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/en/N2w.php" afterPath="$PROJECT_DIR$/src/en/N2w.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -360,12 +360,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="20217000" />
+      <workItem from="1497894971724" duration="20626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20217000" />
+    <option name="totallyTimeSpent" value="20626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
