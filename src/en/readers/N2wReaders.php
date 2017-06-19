@@ -175,6 +175,8 @@ class N2wReaders implements N2wReadersInterface
 #PACKET SCHEMATA
 
     /**
+     * ZZZSchemaReader - reads schemata that is like 000 and resolves the words and returns that words
+     * called when a $challenge_packet looks like 000
      * @param $challenge_packet - the challenge packet string
      * @return string $packet_spelling - str of words representing the packet value
      */
@@ -184,14 +186,19 @@ class N2wReaders implements N2wReadersInterface
         return $packet_spelling;
     }  // N2wReaders::ZZZSchemaReader();
 
-
+    /**
+     * ZZNSchemaReader -  called when a $challenge_packet looks like 001 to 009 (a=>0,b=>0,c=>9)
+     *  this is used to resolve the ones
+     * @param $challenge_packet - the challenge packet string
+     * @return mixed
+     */
     public final function ZZNSchemaReader($challenge_packet)
-    {
+    { // N2wReaders::ZZNSchemaReader();
         $c = $this->getC($challenge_packet);
         $words = $this->ones[(int)$c];
         return $words;
         //return "";
-    }
+    } // N2wReaders::ZZNSchemaReader();
 
 
 

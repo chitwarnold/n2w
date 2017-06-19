@@ -73,7 +73,7 @@ interface N2wReadersInterface
      * @param $challenge_packet - the challenge packet string
      * @return mixed
      */
-    public function ZZNSchemaReader($challenge_packet)
+    public function ZZNSchemaReader($challenge_packet);
 
 
 
