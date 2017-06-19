@@ -8,7 +8,6 @@
 
 namespace chitwarnold\n2w\en;
 
-use chitwarnold\n2w\en\N2wException;
 use chitwarnold\n2w\en\readers\N2wReaders;
 
 
@@ -60,11 +59,16 @@ class N2w
 
     /**
      * N2w constructor.
-     * @param $challenge - a string that can be cast to a floating point number  to be resolved to words
+     * @param numeric $challenge - a string that can be cast to a floating point number  to be resolved to words
      * @param int $desired_decimal_points - desired number of decimal places
      */
     public function __construct($challenge,$desired_decimal_points=2)
     { // N2w::__construct();
+
+        // set the challenge
+        $this->challenge = strlen($challenge) > 0 && is_numeric($challenge) ? $challenge : time();
+        $this->desired_decimal_points = $desired_decimal_points;
+
         // sets a reader
         $_reader = new N2wReaders();
         $this->setReader($_reader);
@@ -94,11 +98,41 @@ class N2w
     public final static function factory(N2wReaders $reader,$challenge,$desired_decimal_points=2)
     { // N2w::factory();
         $_n2w_obj = new N2w($challenge,$desired_decimal_points);
-        // assign the reader
-        $_n2w_obj->setReader($reader);
-        return new N2w($challenge,$desired_decimal_points);
+        return $_n2w_obj;
     } // N2w::factory();
 
+
+    /**
+     * show off the  you can spell
+     */
+    private function getSpelling()
+    {
+        // get the reader
+        $_reader = $this->_reader;
+    }
+
+    /**
+     * solves and returns the number of the spelling
+     */
+     public function solve($challenge,$desired_decimal_points)
+     { // N2w::solve();
+         try {
+
+             if (strlen($challenge) > 0 && is_numeric($challenge)) {
+                 $this->challenge = $challenge;
+                 $this->desired_decimal_points = $desired_decimal_points;
+                 // return the spelling
+                 return $this->getSpelling();
+
+             } else {
+                 throw  new N2wException('Challenge is not A Valid Value, - Not Numeric')
+             }
+
+         } catch (N2wException $e) {
+             exit($e->getMessage());
+         }
+
+     } // N2w::solve();
 
 
 } // N2w : close class
