@@ -12,6 +12,7 @@ use chitwarnold\n2w\en\readers\N2wReadersException;
 
 /**
  * Class N2wReaders - allows for the reading of the packet schemata and translating to words accordingly
+ * @todo define an Interface that this
  * @package chitwarnold\n2w\en\readers
  */
 class N2wReaders

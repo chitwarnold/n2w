@@ -133,6 +133,7 @@ class N2w
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
     /**
      * the active reader class that is use for the class
+     * is an instance of  N2wReaders
      */
     public $reader;
 
@@ -162,10 +163,11 @@ class N2w
     /**
      * assigns the default packet reader class for this spelling class
      * @param N2wReaders $packet_reader_class
+     * @return void;
      */
     public function setReader(N2wReaders $packet_reader_class)
     { // N2w::setReader();
-
+        $this->reader = $packet_reader_class;
     } // N2w::setReader();
 
     /**
