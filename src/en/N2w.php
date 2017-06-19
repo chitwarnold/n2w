@@ -164,9 +164,9 @@ class N2w
      * @param N2wReaders $packet_reader_class
      */
     public function setReader(N2wReaders $packet_reader_class)
-    { N2w::setReader();
+    { // N2w::setReader();
 
-    }
+    } // N2w::setReader();
 
     /**
      * cleans the input that its given, by giving it the desired decimal points and then buiding a characteristic and mantisa
