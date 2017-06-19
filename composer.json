@@ -4,8 +4,16 @@
   "type":"library",
   "license": "BSD",
   "version": "1.0.0",
-  "dependencies": {
+  "authors": [
+    {
+      "name": "Arnold Chitwa Astrill",
+      "email": "chitwarnie@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4":{ "chitwarnold\\n2w\\":"src/"}
+  }
 
-  },
 
 }
