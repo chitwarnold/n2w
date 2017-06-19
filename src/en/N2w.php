@@ -249,4 +249,23 @@ class N2w
     } // N2w::zeroFiller();
 
 
+    /**
+     * resolves packet schemata
+     * @param str $challenge_token - a string Token to be resolved to a schema value . i.e all (int)0 => Z and the rest of the numbers resolve to Z
+     * @return str $token - a string token for the   given value
+     */
+    public function resolveSchemataToken($challenge_token)
+    { // N2w::resolveSchemataToken();
+        $token;
+        if(is_numeric($challenge_token) && (int)$challenge_token === 0){
+            $token = "Z";
+        }else if(is_numeric($challenge_token) && (int)$challenge_token !== 0  ){
+            $token = "N";
+        }else{
+            exit('you must provide a numeric value to proceed');
+        }
+        return  $token;
+    } // N2w::resolveSchemataToken();
+
+
 } // N2w : close class
