@@ -681,12 +681,80 @@ class N2wReaders implements N2wReadersInterface
      * @param $challenge
      * @param $decimal_places
      */
+
+    /**
+     * @param string $challenge - the strings that represents the number challenge to be spelled
+     * @param  integer $decimal_places - the decimal numbers to consider
+     * @return string $words - the English words for the application
+     */
     public function spell($challenge,$decimal_places)
     { // N2wReaders::spell();
-
+        $words ="";
         $this->sanitizeChallenge($challenge,$decimal_places);
         $this->genPackets();
         $this->solveChallengePackets();
+
+        // helps with adding "ands"
+        $cursor = 0;
+
+        switch(count($this->solution_packets)){
+            case 0 :
+                $words .= "";
+                break;
+            default:
+                $solution_reversed_array = array_reverse($this->solution_packets);
+                foreach($solution_reversed_array as $resolved_packet){
+                    $class_name = $resolved_packet['class_name'];
+                    $resolved = $resolved_packet['resolved'];
+                    $challenge = $resolved_packet['challenge'];
+                    $challenge = $this->buildStandard3LengthPacket($challenge);
+                    $cursor++;
+                    $resolve_value = $resolved_packet['words'];
+                    $words;
+                    if($resolved && ((int)$resolved_packet['words'] !== 0 || $resolved_packet['words'] !== "") ){
+
+                        if($cursor === (count($solution_reversed_array)) && ((int)$challenge < 99) && (count($solution_reversed_array) > 1)) {
+                            // attracting  "the hundreds class_name preceeding and " at he right place,
+                            // 1005 => one thousand and five
+                            // 1500 => one thousand five hundred not  one thousand and  five hundred
+                            //$words .= " and $challenge ";
+                            $words .= " and ";
+                        }
+
+                        $words .= $resolved_packet['words'];
+
+                    }
+
+                    // add the class name
+                    // avoing the 1,000,000, being reported as "one million and thousand and seven hundred"
+                    // also avoiding 000-999 to be reported as {packet+value}+ "hundred"
+
+                    if($class_name !== 'hundred' && ((int)$resolved_packet['words'] !== 0 || $resolved_packet['words'] !== "")  ){
+                        $words .= " $class_name,";
+                    }
+
+
+
+
+                    // and addition if the
+                    // and we are not on a value of empty string or zero
+                    // if($cursor !== (count($solution_reversed_array) -1) && ((int)$resolved_packet['words'] !== 0 || $resolved_packet['words'] !== "") ){
+                    // $words .= " and ";
+                    // }
+
+
+                }
+
+
+                break;
+
+
+
+        }
+
+        //echo $this->eliminateAnd($words);
+        return $words;
+
 
     } // N2wReaders::spell();
 

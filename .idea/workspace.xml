@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="075e8e96-b3f8-42c1-a1a6-564d8b32f8b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/en/N2w.php" afterPath="$PROJECT_DIR$/src/en/N2w.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/en/readers/N2wReaders.php" afterPath="$PROJECT_DIR$/src/en/readers/N2wReaders.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +41,8 @@
           <file leaf-file-name="N2wReaders.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="188">
-                  <caret line="288" column="0" lean-forward="true" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+                <state relative-caret-position="-562">
+                  <caret line="286" column="43" lean-forward="true" selection-start-line="286" selection-start-column="43" selection-end-line="286" selection-end-column="43" />
                   <folding>
                     <element signature="e#126#177#0#PHP" expanded="true" />
                     <element signature="e#8790#9265#0#PHP" expanded="false" />
@@ -110,8 +109,8 @@
           <file leaf-file-name="N2wReaders.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="94">
-                  <caret line="684" column="9" lean-forward="false" selection-start-line="684" selection-start-column="9" selection-end-line="684" selection-end-column="29" />
+                <state relative-caret-position="20">
+                  <caret line="690" column="9" lean-forward="false" selection-start-line="690" selection-start-column="9" selection-end-line="690" selection-end-column="29" />
                   <folding>
                     <element signature="e#126#177#0#PHP" expanded="true" />
                   </folding>
@@ -122,9 +121,10 @@
           <file leaf-file-name="cgtnumbertowords.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="82">
-                  <caret line="14" column="6" lean-forward="false" selection-start-line="221" selection-start-column="8" selection-end-line="223" selection-end-column="39" />
+                <state relative-caret-position="-470">
+                  <caret line="232" column="8" lean-forward="true" selection-start-line="232" selection-start-column="8" selection-end-line="288" selection-end-column="22" />
                   <folding>
+                    <element signature="e#5885#7674#0#PHP" expanded="false" />
                     <marker date="1497912883692" expanded="true" signature="18855:18861" ph="..." />
                     <marker date="1497912883692" expanded="true" signature="18880:18916" ph="..." />
                     <marker date="1497912883692" expanded="true" signature="18944:18980" ph="..." />
@@ -365,12 +365,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="18311000" />
+      <workItem from="1497894971724" duration="18646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18311000" />
+    <option name="totallyTimeSpent" value="18646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -475,9 +475,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="221" selection-start-column="8" selection-end-line="223" selection-end-column="39" />
+        <state relative-caret-position="-470">
+          <caret line="232" column="8" lean-forward="true" selection-start-line="232" selection-start-column="8" selection-end-line="288" selection-end-column="22" />
           <folding>
+            <element signature="e#5885#7674#0#PHP" expanded="false" />
             <marker date="1497912883692" expanded="true" signature="18855:18861" ph="..." />
             <marker date="1497912883692" expanded="true" signature="18880:18916" ph="..." />
             <marker date="1497912883692" expanded="true" signature="18944:18980" ph="..." />
@@ -490,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="684" column="9" lean-forward="false" selection-start-line="684" selection-start-column="9" selection-end-line="684" selection-end-column="29" />
+        <state relative-caret-position="20">
+          <caret line="690" column="9" lean-forward="false" selection-start-line="690" selection-start-column="9" selection-end-line="690" selection-end-column="29" />
           <folding>
             <element signature="e#126#177#0#PHP" expanded="true" />
           </folding>
