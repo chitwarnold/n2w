@@ -95,7 +95,10 @@ class N2w
      * thousands separator
      */
     protected $thousands_separator = ",";
-
+    /**
+     * decimal name
+     */
+    protected $decimal_separator_name = "point";
 
 
 } // N2w : close class
