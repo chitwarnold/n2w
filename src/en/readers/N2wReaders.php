@@ -27,4 +27,14 @@ class N2wReaders implements N2wReadersInterface
      */
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 
+    /**
+     * @param $challenge_packet - the challenge packet string
+     * @return string $packet_spelling - str of words representing the packet value
+     */
+    public final function ZZZSchemaReader($challenge_packet)
+    { // N2wReaders::ZZZSchemaReader();
+        $packet_spelling = "";
+        return $packet_spelling;
+    }  // N2wReaders::ZZZSchemaReader();
+
 }
