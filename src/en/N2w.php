@@ -43,7 +43,7 @@ class N2w
      * the teens values of the arabic numerals
      * allowing us to spell out the numbers in the tens place value positions, between 11 and 19.
      */
-    private $teens = array(
+    private $teens = [
         11=>'eleven',
         12=>'twelve',
         13=>'thirteen',
@@ -53,5 +53,23 @@ class N2w
         17=>'seventeen',
         18=>'eighteen',
         19=>'nineteen'
-    );
-}
+    ];
+
+    /**
+     * the tens values of the arabic numerals
+     * allowing us to spell out the numbers in the tens place value positions, factors of ten close
+     */
+    private $tens = [
+        10=>'ten',
+        20=>'twenty',
+        30=>'thirty',
+        40=>'fourty',
+        50=>'fifty',
+        60=>'sixty',
+        70=>'seventy',
+        80=>'eighty',
+        90=>'ninety'
+    ];
+
+
+} // N2w : close class
