@@ -27,8 +27,8 @@
       <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="26" column="78" lean-forward="false" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+            <state relative-caret-position="326">
+              <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -37,8 +37,8 @@
       <file leaf-file-name="cgtnumbertowords.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="45" selection-end-column="7" />
               <folding>
                 <marker date="1497894885447" expanded="true" signature="18722:18728" ph="..." />
                 <marker date="1497894885447" expanded="true" signature="18747:18783" ph="..." />
@@ -254,12 +254,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="2359000" />
+      <workItem from="1497894971724" duration="2447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2359000" />
+    <option name="totallyTimeSpent" value="2447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -329,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="45" selection-end-column="7" />
           <folding>
             <marker date="1497894885447" expanded="true" signature="18722:18728" ph="..." />
             <marker date="1497894885447" expanded="true" signature="18747:18783" ph="..." />
@@ -344,8 +344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="26" column="78" lean-forward="false" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+        <state relative-caret-position="326">
+          <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="18" />
           <folding />
         </state>
       </provider>
