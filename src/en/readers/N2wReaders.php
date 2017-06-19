@@ -61,6 +61,24 @@ class N2wReaders implements N2wReadersInterface
     } // N2wReaders::getB();
 
 
+    /**
+     * reads the first right most value of the packet ( i.e abc in 789, c = 9),
+     * the ones place value of a tri-character packet
+     * @param $challenge_packet
+     * @return bool|null|string
+     */
+    public function getC($challenge_packet)
+    { // N2wReaders::getC();
+        $c = null;
+        if(strlen($challenge_packet) !== 3){
+            exit('invalid C String');
+        }else{
+            $c = substr($challenge_packet,2,1);
+        }
+        return $c;
+    } // N2wReaders::getC();
+
+
 
     /**
      * @param $challenge_packet - the challenge packet string

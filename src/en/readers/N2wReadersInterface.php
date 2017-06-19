@@ -43,8 +43,8 @@ interface N2wReadersInterface
 
 
     /**
-     * reads the first right most value of the packet ( i.e abc in 789, b = 8),
-     * the tens place value of a tri-character packet
+     * reads the first right most value of the packet ( i.e abc in 789, c = 9),
+     * the ones place value of a tri-character packet
      * @param $challenge_packet
      * @return mixed
      */
