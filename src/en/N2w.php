@@ -127,7 +127,7 @@ class N2w
      */
     const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
     /**
-     * packet schema placeholder for non-zero numbers
+     * packet schema placeholder for non-zero nuambers
      */
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 
@@ -290,38 +290,36 @@ class N2w
     } // N2w::resolveSchemataToken();
 
     /**
-     * @param $challenge_packet
-     * @return string
+     * define the a schema that will be used to read this packet.
+     * @param string $challenge_packet - a string that represents a characteristic's packet to be read
+     * @return string $_packet_schema - a string that represents the correct schema to be used to read this packet.
      */
     public function getPacketSchema($challenge_packet)
-    {N2w::getPacketSchema();
-        /**
-         * 789 , a->7 , b -> 8 , c -> 9
-         */
+    {// N2w::getPacketSchema();
 
-
-        $_length_3_packet;
-        $a;
-        $b;
-        $c;
+        $_length_3_packet = "";
         $_packet_schema ="";
         if(strlen($challenge_packet) !== 3){
             $_length_3_packet = $this->zeroFiller($challenge_packet);
         }else{
             $_length_3_packet = $challenge_packet;
         }
+
+        /**
+         * get the atomic ones numeric values, from the packet and assign them to the packet
+         * i.e
+         * 789 , a->7 , b -> 8 , c -> 9
+         */
         $a = substr($_length_3_packet,0,1);
         $b = substr($_length_3_packet,1,1);
         $c = substr($_length_3_packet,2,1);
 
-        // resolving the schema for the three tokens
+        // resolving the schema for the three tokens, and pack them into a packet_schema
         $_packet_schema .= $this->resolveSchemataToken($a);
         $_packet_schema .= $this->resolveSchemataToken($b);
         $_packet_schema .= $this->resolveSchemataToken($c);
 
-        //echo "<br /> a : $a , <br /> b : $b , <br /> c : $c , <br /> schema  : $_packet_schema";
         return $_packet_schema;
-
 
     } //  N2w::getPacketSchema();
 
