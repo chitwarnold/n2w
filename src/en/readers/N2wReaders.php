@@ -507,13 +507,20 @@ class N2wReaders implements N2wReadersInterface
 
 
 #WORKHORSE
+    /**
+     *  takes any number determine its schema, and make  the call to the correct reader
+     * and announce the name(christen the challenge packet) of the packet. This name is without the class multipliers.
+     *
+     * @param string $challenge_packet - the packet to be spelled
+     * @return mixed|string $packet_name - the words version of the challenge packet. the spelling of the packet
+     */
     public function announcePacket($challenge_packet){
         // schemata of intrest
         $schema = $this->getPacketSchema($challenge_packet);
-        $packet_name;
+        $packet_name = "";
 
         // normalize the packet
-        $challenge_packet = $this->standard3LengthPacket($challenge_packet);
+        $challenge_packet = $this->buildStandard3LengthPacket($challenge_packet);
 
         switch((string)$schema){
             // 000, ZZZ
@@ -558,6 +565,13 @@ class N2wReaders implements N2wReadersInterface
 
 
     } // announcePacket
+
+# SPEAK
+
+    public function spell($challenge)
+    { // N2wReaders::spell();
+
+    } // N2wReaders::spell();
 
 
 
