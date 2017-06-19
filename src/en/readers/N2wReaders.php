@@ -68,6 +68,21 @@ class N2wReaders implements N2wReadersInterface
         90=>'ninety'
     ];
 
+    /**
+     * the hundreds values of the arabic numerals
+     * allowing us to spell out the numbers in the hundreds place value positions, factors of 100 close
+     */
+    private $hundreds = [
+        100=>'one hundred',
+        200=>'two hundred',
+        300=>'three hundred',
+        400=>'four hundred',
+        500=>'five hundred',
+        600=>'six hundred',
+        700=>'seven hundred',
+        800=>'eight hundred',
+        900=>'nine hundred'
+    ];
 
 
     /**
