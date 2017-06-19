@@ -91,4 +91,12 @@ interface N2wReadersInterface
      */
     public function NNNSchemaReader($challenge_packet);
 
+    /**
+     * NNZSchemaReader -  called when a $challenge_packet looks like 770 (a,b,c)(a=>[1-9],b=>[1-9],c=>0)
+     * this is used to resolve triple digits with zero at c on the string
+     * @param $challenge_packet - the challenge packet string
+     * @return string -  string of words representing the packet value
+     */
+    public function NNZSchemaReader($challenge_packet);
+
 } // N2wReadersInterface . close
