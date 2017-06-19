@@ -140,6 +140,12 @@ class N2wReaders implements N2wReadersInterface
      * packet schema placeholder for non-zero numbers
      */
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
+    /**
+     * challenge packet schema ZZZ ( 000 )
+     */
+    const CHALLENGE_PACKET_SCHEMA_ZZZ = 'ZZZ';
+
+
 
 
     /**
@@ -477,8 +483,8 @@ class N2wReaders implements N2wReadersInterface
         $challenge_packet = $this->standard3LengthPacket($challenge_packet);
 
         switch((string)$schema){
-            // 000
-            case 'ZZZ':
+            // 000, ZZZ
+            case self::CHALLENGE_PACKET_SCHEMA_ZZZ:
                 $packet_name = $this->ZZZSchemaReader($challenge_packet);
                 break;
             // 001  ones
