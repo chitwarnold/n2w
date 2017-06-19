@@ -135,7 +135,7 @@ class N2w
      * the active reader class that is use for the class
      * is an instance of  N2wReaders
      */
-    public $reader;
+    private $_reader;
 
 
 
@@ -167,13 +167,13 @@ class N2w
      */
     public function setReader(N2wReaders $packet_reader_class)
     { // N2w::setReader();
-        $this->reader = $packet_reader_class;
+        $this->_reader = $packet_reader_class;
     } // N2w::setReader();
 
     /**
      * cleans the input that its given, by giving it the desired decimal points and then buiding a characteristic and mantisa
      * @param $challenge - a string that can be cast to a floating point number  to be resolved to words
-     * @param int $desired_decimal_points - desired number of decimal places
+     * @param integer $desired_decimal_points - desired number of decimal places
      * @return void
      */
     private final function sanitizeChallenge($challenge,$desired_decimal_points=2)
@@ -187,14 +187,16 @@ class N2w
 
     /**
      * n2w factory method
-     */
-    /**
-     * @param $challenge - a string that can be cast to a floating point number  to be resolved to words
-     * @param int $desired_decimal_points - desired number of decimal places
+     * @param N2wReaders $reader
+     * @param $challenge
+     * @param integer $desired_decimal_points
      * @return N2w
      */
-    public final static function factory($challenge,$desired_decimal_points=2)
+    public final static function factory(N2wReaders $reader,$challenge,$desired_decimal_points=2)
     { // N2w::factory();
+        $_n2w_obj = new N2w($challenge,$desired_decimal_points);
+        // assign the reader
+        $_n2w_obj->setReader($reader);
         return new N2w($challenge,$desired_decimal_points);
     } // N2w::factory();
 

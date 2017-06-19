@@ -25,6 +25,14 @@ interface N2wReadersInterface
 
 
     /**
+     * reads the first left most value of the packet ( i.e abc in 789, a = 7)
+     * @param $challenge_packet
+     * @return mixed
+     */
+    public function getA($challenge_packet);
+
+
+    /**
      * ZZZSchemaReader - reads schemata that is like 000 and resolves the words and returns that words
      * called when a $challenge_packet looks like 000
      * @param $challenge_packet - the challenge packet string
