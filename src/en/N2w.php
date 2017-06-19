@@ -129,8 +129,7 @@ class N2w
     public function __construct($challenge,$desired_decimal_points=2)
     { // N2w::__construct();
 
-
-
+        $this->sanitizeChallenge($challenge,$desired_decimal_points);
 
     } //  N2w::__construct();
 
@@ -147,6 +146,15 @@ class N2w
         $this->characteristic = $_char_mantisa[0];
         $this->mantisa = $_char_mantisa[1];
     } // N2w::sanitizeChallenge();
+
+
+    /**
+     * n2w factory method
+     */
+    public final static function factory($challenge,$desired_decimal_points=2)
+    { // N2w::factory();
+
+    } // N2w::factory();
 
 
 } // N2w : close class
