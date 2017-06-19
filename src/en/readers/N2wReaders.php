@@ -8,8 +8,18 @@
 
 namespace chitwarnold\n2w\en\readers;
 
+use chitwarnold\n2w\en\readers\N2wReadersException;
+
 
 class N2wReaders
 {
+    /**
+     * packet schema placeholder for 0(zero)
+     */
+    const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
+    /**
+     * packet schema placeholder for non-zero numbers
+     */
+    const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 
 }

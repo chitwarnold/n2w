@@ -127,7 +127,7 @@ class N2w
      */
     const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
     /**
-     * packet schema placeholder for non-zero nuambers
+     * packet schema placeholder for non-zero numbers
      */
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 

@@ -9,7 +9,7 @@
 namespace chitwarnold\n2w\en\readers;
 
 
-class N2wReadersException
+class N2wReadersException extends \Exception
 {
 
 }
