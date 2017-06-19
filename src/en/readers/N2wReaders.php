@@ -19,6 +19,24 @@ use chitwarnold\n2w\en\readers\N2wReadersInterface;
 class N2wReaders implements N2wReadersInterface
 {
     /**
+     * the ones values of the arabic numerals
+     * allowing us to spell out the numbers in the ones place value positions.
+     */
+    private $ones = [
+        0=>'',
+        1=>'one',
+        2=>'two',
+        3=>'three',
+        4=>'four',
+        5=>'five',
+        6=>'six',
+        7=>'seven',
+        8=>'eight',
+        9=>'nine'
+    ];
+
+
+    /**
      * packet schema placeholder for 0(zero)
      */
     const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
@@ -200,6 +218,37 @@ class N2wReaders implements N2wReadersInterface
         //return "";
     } // N2wReaders::ZZNSchemaReader();
 
+    /**
+     * ZNNSchemaReader -  called when a $challenge_packet looks like 061,011,060 (a=>0,b=>[0-9],c=>[0-9])
+     * this is used to resolve the tens,teens and the rest of double digits
+     * @param $challenge_packet - the challenge packet string
+     * @return string $words -  string of words representing the packet value
+     */
+    public final function ZNNSchemaReader($challenge_packet)
+    {// N2wReaders::ZZNSchemaReader();
+        $c = $this->getC($challenge_packet);
+        $b = $this->getB($challenge_packet);
+        $a = $this->getA($challenge_packet);
+        $z = "0";
+        $ab = $a.$b;
+        $bc = $b.$c;
+        $words = null;
+        // resolve tens
+        if((int)$a ===0 && (int)$c === 0){
+            $words = $this->tens[(int)$bc];
+        }else if((int)$a ===0 && (int)$b === 1){
+            // solve teens
+            $words = $this->teens[(int)$bc];
+        }else{
+            // means its an ordinary two digit
+            $once_words = $this->ones[(int)$c];
+            $ten_words = $this->tens[(int)$b.$z];
+            $words = $ten_words." ".$once_words;
+        }
+
+        return $words ;
+
+    } // N2wReaders::ZZNSchemaReader();
 
 
 

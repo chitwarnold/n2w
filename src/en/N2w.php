@@ -25,22 +25,7 @@ use chitwarnold\n2w\en\readers\N2wReaders;
 
 class N2w
 {
-    /**
-     * the ones values of the arabic numerals
-     * allowing us to spell out the numbers in the ones place value positions.
-     */
-    private $ones = [
-        0=>'',
-        1=>'one',
-        2=>'two',
-        3=>'three',
-        4=>'four',
-        5=>'five',
-        6=>'six',
-        7=>'seven',
-        8=>'eight',
-        9=>'nine'
-    ];
+
 
     /**
      * the teens values of the arabic numerals
