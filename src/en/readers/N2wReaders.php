@@ -30,11 +30,11 @@ class N2wReaders implements N2wReadersInterface
     /**
      * gets the value on the hundreds' place value
      * @param $challenge_packet - the  challenge packet has got to  have a length of 3
-     * @return bool|string $a - the string found in the place value, calling it a string because we are handling as string
+     * @return bool|string $a - the string found in the hundreds place value, calling it a string because we are handling as string
      */
     public function getA($challenge_packet)
     {// N2wReaders::getA();
-        $a = "";
+        $a = null;
         if(strlen($challenge_packet) !== 3){
             exit('invalid A String');
         }else{
@@ -43,6 +43,22 @@ class N2wReaders implements N2wReadersInterface
         return $a;
     } // N2wReaders::getA();
 
+
+    /**
+     * gets the value on the tens' place value
+     * @param $challenge_packet - the  challenge packet has got to  have a length of 3
+     * @return bool|string $b - the string found in the tens place value, calling it a string because we are handling as string
+     */
+    public function getB($challenge_packet)
+    { // N2wReaders::getB();
+        $b = null;
+        if(strlen($challenge_packet) !== 3){
+            exit('invalid B String');
+        }else{
+            $b = substr($challenge_packet,1,1);
+        }
+        return $b;
+    } // N2wReaders::getB();
 
 
 
