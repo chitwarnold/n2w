@@ -114,7 +114,11 @@ class N2w
     /**
      * challenge packets ( available packets on this challenge)
      */
-    private $challenge_packets = array();
+    private $challenge_packets = [];
+    /**
+     * solutions packets - store the packets that are used to spell the number.
+     */
+    private $solution_packets = [];
 
 
 
