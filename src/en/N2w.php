@@ -129,7 +129,24 @@ class N2w
     public function __construct($challenge,$desired_decimal_points=2)
     { // N2w::__construct();
 
+
+
+
     } //  N2w::__construct();
+
+    /**
+     * cleans the input that its given, by giving it the desired decimal points and then buiding a characteristic and mantisa
+     * @param $challenge
+     * @param int $desired_decimal_points
+     * @return void
+     */
+    private final function sanitizeChallenge($challenge,$desired_decimal_points=2)
+    { // N2w::sanitizeChallenge();
+        $new_value =  number_format($challenge,$desired_decimal_points);
+        $_char_mantisa = explode($this->decimal_separator, (string)$new_value);
+        $this->characteristic = $_char_mantisa[0];
+        $this->mantisa = $_char_mantisa[1];
+    } // N2w::sanitizeChallenge();
 
 
 } // N2w : close class
