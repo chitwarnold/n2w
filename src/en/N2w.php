@@ -123,8 +123,8 @@ class N2w
 
     /**
      * N2w constructor.
-     * @param $challenge
-     * @param int $desired_decimal_points
+     * @param $challenge - a string that can be cast to a floating point number  to be resolved to words
+     * @param int $desired_decimal_points - desired number of decimal places
      */
     public function __construct($challenge,$desired_decimal_points=2)
     { // N2w::__construct();
@@ -135,8 +135,8 @@ class N2w
 
     /**
      * cleans the input that its given, by giving it the desired decimal points and then buiding a characteristic and mantisa
-     * @param $challenge
-     * @param int $desired_decimal_points
+     * @param $challenge - a string that can be cast to a floating point number  to be resolved to words
+     * @param int $desired_decimal_points - desired number of decimal places
      * @return void
      */
     private final function sanitizeChallenge($challenge,$desired_decimal_points=2)
@@ -151,10 +151,33 @@ class N2w
     /**
      * n2w factory method
      */
+    /**
+     * @param $challenge - a string that can be cast to a floating point number  to be resolved to words
+     * @param int $desired_decimal_points - desired number of decimal places
+     * @return N2w
+     */
     public final static function factory($challenge,$desired_decimal_points=2)
     { // N2w::factory();
-
+        return new N2w($challenge,$desired_decimal_points);
     } // N2w::factory();
+
+
+    /**
+     * generates the packets array for the  characteristic of the object
+     * @return void
+     */
+    public function genPackets()
+    { // N2w::genPackets();
+
+        $_packets = explode($this->thousands_separator, $this->characteristic);
+        $this->challenge_packets['raw_packets_r'] = $_packets;
+        $_packets_r = array_reverse($_packets);
+        // build the dynamic schema of challenge_packets
+        for($i=0; $i<count($_packets); $i++){
+            $this->challenge_packets['refined_packets_r'][$this->class_multipliers[$i]] = $_packets_r[$i];
+        }
+
+    } // N2w::genPackets();
 
 
 } // N2w : close class

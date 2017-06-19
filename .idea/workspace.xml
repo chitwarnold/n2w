@@ -27,8 +27,8 @@
       <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="156" column="24" lean-forward="false" selection-start-line="156" selection-start-column="24" selection-end-line="156" selection-end-column="24" />
+            <state relative-caret-position="476">
+              <caret line="179" column="27" lean-forward="false" selection-start-line="179" selection-start-column="27" selection-end-line="179" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -37,15 +37,15 @@
       <file leaf-file-name="cgtnumbertowords.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="144" column="9" lean-forward="true" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="127" />
+            <state relative-caret-position="225">
+              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="179" selection-end-column="21" />
               <folding>
-                <marker date="1497899530372" expanded="true" signature="18765:18771" ph="..." />
-                <marker date="1497899530372" expanded="true" signature="18790:18826" ph="..." />
-                <marker date="1497899530372" expanded="true" signature="18854:18890" ph="..." />
-                <marker date="1497899530372" expanded="true" signature="19004:19010" ph="..." />
-                <marker date="1497899530372" expanded="true" signature="19060:19096" ph="..." />
-                <marker date="1497899530372" expanded="true" signature="19159:19195" ph="..." />
+                <marker date="1497900549853" expanded="true" signature="18771:18777" ph="..." />
+                <marker date="1497900549853" expanded="true" signature="18796:18832" ph="..." />
+                <marker date="1497900549853" expanded="true" signature="18860:18896" ph="..." />
+                <marker date="1497900549853" expanded="true" signature="19010:19016" ph="..." />
+                <marker date="1497900549853" expanded="true" signature="19066:19102" ph="..." />
+                <marker date="1497900549853" expanded="true" signature="19165:19201" ph="..." />
               </folding>
             </state>
           </provider>
@@ -255,12 +255,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="4999000" />
+      <workItem from="1497894971724" duration="5215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4999000" />
+    <option name="totallyTimeSpent" value="5215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -330,23 +330,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="144" column="9" lean-forward="true" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="127" />
+        <state relative-caret-position="225">
+          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="179" selection-end-column="21" />
           <folding>
-            <marker date="1497899530372" expanded="true" signature="18765:18771" ph="..." />
-            <marker date="1497899530372" expanded="true" signature="18790:18826" ph="..." />
-            <marker date="1497899530372" expanded="true" signature="18854:18890" ph="..." />
-            <marker date="1497899530372" expanded="true" signature="19004:19010" ph="..." />
-            <marker date="1497899530372" expanded="true" signature="19060:19096" ph="..." />
-            <marker date="1497899530372" expanded="true" signature="19159:19195" ph="..." />
+            <marker date="1497900549853" expanded="true" signature="18771:18777" ph="..." />
+            <marker date="1497900549853" expanded="true" signature="18796:18832" ph="..." />
+            <marker date="1497900549853" expanded="true" signature="18860:18896" ph="..." />
+            <marker date="1497900549853" expanded="true" signature="19010:19016" ph="..." />
+            <marker date="1497900549853" expanded="true" signature="19066:19102" ph="..." />
+            <marker date="1497900549853" expanded="true" signature="19165:19201" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="156" column="24" lean-forward="false" selection-start-line="156" selection-start-column="24" selection-end-line="156" selection-end-column="24" />
+        <state relative-caret-position="476">
+          <caret line="179" column="27" lean-forward="false" selection-start-line="179" selection-start-column="27" selection-end-line="179" selection-end-column="27" />
           <folding />
         </state>
       </provider>
