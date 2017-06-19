@@ -270,22 +270,7 @@ class N2w
     } // N2w::eliminateAnd();
 
 
-    /**
-     * zero fills all those packets that are shorter than  3 in length
-     * @param $challenge_packet - the packet that requires to be zero filled
-     * @return string $new_str - the zero filled,(left padded) packet
-     */
-    private final function zeroFiller($challenge_packet)
-    {// N2w::zeroFiller();
-        $new_str = "";
-        if(strlen($challenge_packet) === 2){
-            $new_str = "0".$challenge_packet;
-        }else{
-            $new_str = "00".$challenge_packet;
-        }
 
-        return $new_str;
-    } // N2w::zeroFiller();
 
 
     /**
@@ -307,40 +292,6 @@ class N2w
         }
         return  $token;
     } // N2w::resolveSchemataToken();
-
-    /**
-     * define the a schema that will be used to read this packet.
-     * @param string $challenge_packet - a string that represents a characteristic's packet to be read
-     * @return string $_packet_schema - a string that represents the correct schema to be used to read this packet.
-     */
-    public function getPacketSchema($challenge_packet)
-    {// N2w::getPacketSchema();
-
-        $_length_3_packet = "";
-        $_packet_schema ="";
-        if(strlen($challenge_packet) !== 3){
-            $_length_3_packet = $this->zeroFiller($challenge_packet);
-        }else{
-            $_length_3_packet = $challenge_packet;
-        }
-
-        /**
-         * get the atomic ones numeric values, from the packet and assign them to the packet
-         * i.e
-         * 789 , a->7 , b -> 8 , c -> 9
-         */
-        $a = substr($_length_3_packet,0,1);
-        $b = substr($_length_3_packet,1,1);
-        $c = substr($_length_3_packet,2,1);
-
-        // resolving the schema for the three tokens, and pack them into a packet_schema
-        $_packet_schema .= $this->resolveSchemataToken($a);
-        $_packet_schema .= $this->resolveSchemataToken($b);
-        $_packet_schema .= $this->resolveSchemataToken($c);
-
-        return $_packet_schema;
-
-    } //  N2w::getPacketSchema();
 
 
 } // N2w : close class
