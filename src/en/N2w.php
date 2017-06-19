@@ -9,6 +9,7 @@
 namespace chitwarnold\n2w\en;
 
 use chitwarnold\n2w\en\N2wException;
+use chitwarnold\n2w\en\readers\N2wReaders;
 
 
 /**
@@ -130,6 +131,10 @@ class N2w
      * packet schema placeholder for non-zero numbers
      */
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
+    /**
+     * the active reader class that is use for the class
+     */
+    public $reader;
 
 
 
@@ -152,6 +157,16 @@ class N2w
         $this->sanitizeChallenge($challenge,$desired_decimal_points);
 
     } //  N2w::__construct();
+
+
+    /**
+     * assigns the default packet reader class for this spelling class
+     * @param N2wReaders $packet_reader_class
+     */
+    public function setReader(N2wReaders $packet_reader_class)
+    { N2w::setReader();
+
+    }
 
     /**
      * cleans the input that its given, by giving it the desired decimal points and then buiding a characteristic and mantisa
