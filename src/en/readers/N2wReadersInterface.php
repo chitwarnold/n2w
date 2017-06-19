@@ -115,4 +115,12 @@ interface N2wReadersInterface
      */
     public function ZNZSchemaReader($challenge_packet);
 
+    /**
+     * NZZSchemaReader - called when a $challenge_packet looks like 100 (a,b,c)(a=>[1-9],b=>0,c=>0)
+     * this is used to resolve hundreds (100,200,300,400,500,600,700,800,900)
+     * @param $challenge_packet - the challenge packet string
+     * @return string -  string of words representing the packet value
+     */
+    public function NZZSchemaReader($challenge_packet);
+
 } // N2wReadersInterface . close
