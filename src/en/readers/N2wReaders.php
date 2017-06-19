@@ -9,13 +9,14 @@
 namespace chitwarnold\n2w\en\readers;
 
 use chitwarnold\n2w\en\readers\N2wReadersException;
+use chitwarnold\n2w\en\readers\N2wReadersInterface;
 
 /**
  * Class N2wReaders - allows for the reading of the packet schemata and translating to words accordingly
  * @todo define an Interface that this
  * @package chitwarnold\n2w\en\readers
  */
-class N2wReaders
+class N2wReaders implements N2wReadersInterface
 {
     /**
      * packet schema placeholder for 0(zero)
