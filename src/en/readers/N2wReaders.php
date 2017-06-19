@@ -28,6 +28,25 @@ class N2wReaders implements N2wReadersInterface
     const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
 
     /**
+     * gets the value on the hundreds' place value
+     * @param $challenge_packet - the  challenge packet has got to  have a length of 3
+     * @return bool|string $a - the string found in the place value, calling it a string because we are handling as string
+     */
+    public function getA($challenge_packet)
+    {// N2wReaders::getA();
+        $a = "";
+        if(strlen($challenge_packet) !== 3){
+            exit('invalid A String');
+        }else{
+            $a = substr($challenge_packet,0,1);
+        }
+        return $a;
+    } // N2wReaders::getA();
+
+
+
+
+    /**
      * @param $challenge_packet - the challenge packet string
      * @return string $packet_spelling - str of words representing the packet value
      */

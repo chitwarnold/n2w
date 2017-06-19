@@ -25,7 +25,8 @@ interface N2wReadersInterface
 
 
     /**
-     * reads the first left most value of the packet ( i.e abc in 789, a = 7)
+     * reads the first left most value of the packet ( i.e abc in 789, a = 7),
+     * the hundreds place value
      * @param $challenge_packet
      * @return mixed
      */
