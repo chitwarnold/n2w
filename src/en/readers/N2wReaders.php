@@ -753,7 +753,7 @@ class N2wReaders implements N2wReadersInterface
         }
 
         //echo $this->eliminateAnd($words);
-        $words =
+        $words = $this->cleanUpOutput($words);
 
 
         return $words;

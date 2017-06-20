@@ -51,8 +51,8 @@
           <file leaf-file-name="N2wReaders.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="172">
-                  <caret line="782" column="36" lean-forward="true" selection-start-line="782" selection-start-column="8" selection-end-line="782" selection-end-column="36" />
+                <state relative-caret-position="217">
+                  <caret line="761" column="9" lean-forward="false" selection-start-line="761" selection-start-column="9" selection-end-line="761" selection-end-column="29" />
                   <folding>
                     <element signature="e#126#177#0#PHP" expanded="true" />
                     <element signature="e#8790#9265#0#PHP" expanded="false" />
@@ -103,21 +103,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="N2w.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+                <state relative-caret-position="200">
+                  <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="N2wReaders.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="N2wReaders.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="155">
-                  <caret line="690" column="9" lean-forward="false" selection-start-line="690" selection-start-column="9" selection-end-line="690" selection-end-column="29" />
+                <state relative-caret-position="95">
+                  <caret line="686" column="17" lean-forward="false" selection-start-line="686" selection-start-column="17" selection-end-line="686" selection-end-column="17" />
                   <folding>
                     <element signature="e#126#177#0#PHP" expanded="true" />
                   </folding>
@@ -387,12 +387,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="22591000" />
+      <workItem from="1497894971724" duration="22653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22591000" />
+    <option name="totallyTimeSpent" value="22653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -519,8 +519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="782" column="36" lean-forward="true" selection-start-line="782" selection-start-column="8" selection-end-line="782" selection-end-column="36" />
+        <state relative-caret-position="217">
+          <caret line="761" column="9" lean-forward="false" selection-start-line="761" selection-start-column="9" selection-end-line="761" selection-end-column="29" />
           <folding>
             <element signature="e#126#177#0#PHP" expanded="true" />
             <element signature="e#8790#9265#0#PHP" expanded="false" />
