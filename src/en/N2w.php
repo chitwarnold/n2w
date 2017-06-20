@@ -27,11 +27,11 @@ class N2w
     /**
      * @var the challenge for the day
      */
-    public $challenge;
+    private $_challenge;
     /**
      * decimal point to be be allocated
      */
-    public $desired_decimal_points  = 2;
+    private $_desired_decimal_points  = 2;
     /**
      * spelling returned
      */
@@ -87,14 +87,13 @@ class N2w
 
     /**
      * n2w factory method
-     * @param N2wReaders $reader
-     * @param $challenge
-     * @param integer $desired_decimal_points
-     * @return N2w
+     * @param N2wReaders $reader - the class that shall manage all the reading of the numbers
+     * @return N2w $_n2w_obj - an object that is ready to spell numeric string
      */
-    public final static function factory(N2wReaders $reader,$challenge,$desired_decimal_points=2)
+    public final static function factory(N2wReaders $reader)
     { // N2w::factory();
-        $_n2w_obj = new N2w($challenge,$desired_decimal_points);
+        $_n2w_obj = new N2w();
+        $_n2w_obj->setReader($reader);
         return $_n2w_obj;
     } // N2w::factory();
 
@@ -106,7 +105,7 @@ class N2w
     { // N2w::getSpelling();
         // get the reader
         $_reader = $this->_reader;
-        $this->_spelling = $_reader->spell($this->challenge,$this->desired_decimal_points);
+        $this->_spelling = $_reader->spell($this->_challenge,$this->_desired_decimal_points);
         return $this->_spelling;
     } //  N2w::getSpelling();
 
@@ -117,20 +116,20 @@ class N2w
     /**
      * @param numeric $challenge - a string that can be cast to a floating point number  to be resolved to words
      * @param int $desired_decimal_points - desired number of decimal places
-     * @return string
+     * @return string - the words that spell the number challenge
      */
      public function solve($challenge,$desired_decimal_points)
      { // N2w::solve();
          try {
 
              if (strlen($challenge) > 0 && is_numeric($challenge)) {
-                 $this->challenge = $challenge;
-                 $this->desired_decimal_points = $desired_decimal_points;
+                 $this->_challenge = $challenge;
+                 $this->_desired_decimal_points = $desired_decimal_points;
                  // return the spelling
                  return $this->getSpelling();
 
              } else {
-                 throw  new N2wException('Challenge is not A Valid Value, - Not Numeric')
+                 throw  new N2wException('Challenge is not A Valid Value, - Not Numeric');
              }
 
          } catch (N2wException $e) {
