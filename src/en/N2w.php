@@ -38,29 +38,12 @@ class N2w
     private $_spelling = "";
 
     /**
-     * packet schema placeholder for 0(zero)
-     */
-    const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
-    /**
-     * packet schema placeholder for non-zero numbers
-     */
-    const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
-    /**
      * the active reader class that is use for the class
      * is an instance of  N2wReaders
      */
     private $_reader;
 
-
-
-
-
-
-
-
-
-
-
+    
     /**
      * N2w constructor., assumes that native reader will be used and just calls it.
      */
