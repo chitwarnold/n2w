@@ -28,7 +28,7 @@ composer require chitwarnold/n2w
 or add
 
 ```json
-"chitwarnold/ais": "~1.0.0",
+"chitwarnold/ais": "~1.0.2",
 ```
 
 to the require section of your composer.json.
