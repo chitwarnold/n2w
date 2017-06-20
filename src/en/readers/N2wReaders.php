@@ -769,8 +769,14 @@ class N2wReaders implements N2wReadersInterface
     private function cleanUpOutput($challenge)
     { //N2wReaders::cleanUpOutput();
         $cleaner_output = "";
-
-
+        // get the length of the challenge
+        $challenge_length = strlen($challenge);
+        $last_char = $challenge[$challenge_length - 1];
+         if( $last_char == ","){
+             $cleaner_output = substr($challenge,0,$challenge_length - 1);
+         }else{
+             $cleaner_output = $challenge;
+         }
 
         return $cleaner_output;
 
