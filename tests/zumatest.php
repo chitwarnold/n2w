@@ -20,6 +20,20 @@ use chitwarnold\n2w\en\readers\N2wReaders;
 
 // get some spellcheck
 
+/**
+ *  Running the test from the php command line
+ *  0. download this library
+ *  1. Run $ composer install # to install the autoload
+ *  2. test the library
+ *     $ php zumatest.php
+ * # feel free to to update the
+ *
+ *
+ *
+ */
+
 $_spelling_bee = new N2w();
-$solution = $_spelling_bee->solve(2000000000000000,2);
+$number_to_spell = 2000000000200000 ;// two quadrillion,
+$decimal_point  = 2;
+$solution = $_spelling_bee->solve($number_to_spell,$decimal_point);
 echo $solution.PHP_EOL;

@@ -753,11 +753,27 @@ class N2wReaders implements N2wReadersInterface
         }
 
         //echo $this->eliminateAnd($words);
+        $words =
+
+
         return $words;
 
 
     } // N2wReaders::spell();
 
+    /**
+     * performs any clean up and nomarlization
+     * @param string $challenge - the spelled words
+     * @return string $cleaner_output - the spelled words normalized
+     */
+    private function cleanUpOutput($challenge)
+    { //N2wReaders::cleanUpOutput();
+        $cleaner_output = "";
 
+
+
+        return $cleaner_output;
+
+    } //N2wReaders::cleanUpOutput();
 
 } // N2wReaders . close
