@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
 /**
  * Created by PhpStorm.
  * User: vh1
@@ -19,5 +21,5 @@ use chitwarnold\n2w\en\readers\N2wReaders;
 // get some spellcheck
 
 $_spelling_bee = new N2w();
-$solution = $_spelling_bee->solve(200000,2);
-echo $solution;
+$solution = $_spelling_bee->solve(2000000000000000,2);
+echo $solution.PHP_EOL;

@@ -14,19 +14,6 @@ namespace chitwarnold\n2w\en\readers;
  */
 interface N2wReadersInterface
 {
-    /**
-     * packet schema placeholder for 0(zero)
-     */
-    const PACKET_SCHEMA_PLACEHOLDER_ZERO = "Z";
-    /**
-     * packet schema placeholder for non-zero numbers
-     */
-    const PACKET_SCHEMA_PLACEHOLDER_NON_ZERO_NUMBER = "N";
-
-
-
-
-
 
 
     /**

@@ -43,7 +43,7 @@ class N2w
      */
     private $_reader;
 
-    
+
     /**
      * N2w constructor., assumes that native reader will be used and just calls it.
      */

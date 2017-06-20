@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="075e8e96-b3f8-42c1-a1a6-564d8b32f8b2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/en/N2w.php" afterPath="$PROJECT_DIR$/src/en/N2w.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php" afterPath="$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/zumatest.php" afterPath="$PROJECT_DIR$/tests/zumatest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,24 +30,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="N2w.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="N2w.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="155">
-                  <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+                <state relative-caret-position="65">
+                  <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="zumatest.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="zumatest.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/zumatest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="229">
-                  <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+                <state relative-caret-position="154">
+                  <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
                   <folding>
-                    <element signature="e#6#293#0#PHP" expanded="true" />
-                    <element signature="e#294#321#0#PHP" expanded="true" />
+                    <element signature="e#345#372#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -66,8 +69,8 @@
           <file leaf-file-name="N2wReadersInterface.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="49">
-                  <caret line="109" column="4" lean-forward="true" selection-start-line="109" selection-start-column="4" selection-end-line="114" selection-end-column="7" />
+                <state relative-caret-position="120">
+                  <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -77,7 +80,7 @@
             <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="217">
-                  <caret line="215" column="30" lean-forward="true" selection-start-line="187" selection-start-column="6" selection-end-line="215" selection-end-column="30" />
+                  <caret line="215" column="30" lean-forward="false" selection-start-line="187" selection-start-column="6" selection-end-line="215" selection-end-column="30" />
                   <folding>
                     <marker date="1497912883692" expanded="true" signature="18855:18861" ph="..." />
                     <marker date="1497912883692" expanded="true" signature="18880:18916" ph="..." />
@@ -94,7 +97,7 @@
             <entry file="file://$PROJECT_DIR$/src/en/N2wException.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -108,7 +111,7 @@
             <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="215">
-                  <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+                  <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -130,7 +133,7 @@
             <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-470">
-                  <caret line="232" column="8" lean-forward="true" selection-start-line="232" selection-start-column="8" selection-end-line="288" selection-end-column="22" />
+                  <caret line="232" column="8" lean-forward="false" selection-start-line="232" selection-start-column="8" selection-end-line="288" selection-end-column="22" />
                   <folding>
                     <element signature="e#5885#7674#0#PHP" expanded="false" />
                     <marker date="1497912883692" expanded="true" signature="18855:18861" ph="..." />
@@ -173,11 +176,12 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/en/N2wException.php" />
         <option value="$PROJECT_DIR$/src/en/readers/N2wReadersException.php" />
-        <option value="$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php" />
         <option value="$PROJECT_DIR$/workings/cgtnumbertowords.php" />
         <option value="$PROJECT_DIR$/src/en/readers/N2wReaders.php" />
-        <option value="$PROJECT_DIR$/tests/zumatest.php" />
         <option value="$PROJECT_DIR$/src/en/N2w.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php" />
+        <option value="$PROJECT_DIR$/tests/zumatest.php" />
       </list>
     </option>
   </component>
@@ -387,12 +391,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="21375000" />
+      <workItem from="1497894971724" duration="21723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21375000" />
+    <option name="totallyTimeSpent" value="21723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -455,7 +459,7 @@
     <entry file="file://$PROJECT_DIR$/src/en/N2wException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -468,18 +472,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="109" column="4" lean-forward="true" selection-start-line="109" selection-start-column="4" selection-end-line="114" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/workings/cgtnumbertowords.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="215" column="30" lean-forward="true" selection-start-line="187" selection-start-column="6" selection-end-line="215" selection-end-column="30" />
+          <caret line="215" column="30" lean-forward="false" selection-start-line="187" selection-start-column="6" selection-end-line="215" selection-end-column="30" />
           <folding>
             <marker date="1497912883692" expanded="true" signature="18855:18861" ph="..." />
             <marker date="1497912883692" expanded="true" signature="18880:18916" ph="..." />
@@ -503,22 +499,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/zumatest.php">
+    <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="e#6#293#0#PHP" expanded="true" />
-            <element signature="e#294#321#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="65">
+          <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/en/N2w.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/zumatest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#345#372#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
