@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="075e8e96-b3f8-42c1-a1a6-564d8b32f8b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/en/readers/N2wReaders.php" afterPath="$PROJECT_DIR$/src/en/readers/N2wReaders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,16 +49,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="N2wReaders.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="N2wReaders.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="761" column="9" lean-forward="false" selection-start-line="761" selection-start-column="9" selection-end-line="761" selection-end-column="29" />
+                <state relative-caret-position="22">
+                  <caret line="703" column="15" lean-forward="false" selection-start-line="703" selection-start-column="15" selection-end-line="703" selection-end-column="15" />
                   <folding>
                     <element signature="e#126#177#0#PHP" expanded="true" />
                     <element signature="e#8790#9265#0#PHP" expanded="false" />
                     <element signature="e#9530#10322#0#PHP" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -174,10 +185,10 @@
         <option value="$PROJECT_DIR$/src/en/readers/N2wReadersException.php" />
         <option value="$PROJECT_DIR$/workings/cgtnumbertowords.php" />
         <option value="$PROJECT_DIR$/src/en/N2w.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php" />
         <option value="$PROJECT_DIR$/tests/zumatest.php" />
         <option value="$PROJECT_DIR$/src/en/readers/N2wReaders.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -387,12 +398,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497894967071</updated>
-      <workItem from="1497894971724" duration="22653000" />
+      <workItem from="1497894971724" duration="22820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22653000" />
+    <option name="totallyTimeSpent" value="22820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1344" height="742" extended-state="4" />
@@ -483,14 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReadersInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -519,13 +522,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/en/readers/N2wReaders.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="761" column="9" lean-forward="false" selection-start-line="761" selection-start-column="9" selection-end-line="761" selection-end-column="29" />
+        <state relative-caret-position="22">
+          <caret line="703" column="15" lean-forward="false" selection-start-line="703" selection-start-column="15" selection-end-line="703" selection-end-column="15" />
           <folding>
             <element signature="e#126#177#0#PHP" expanded="true" />
             <element signature="e#8790#9265#0#PHP" expanded="false" />
             <element signature="e#9530#10322#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
