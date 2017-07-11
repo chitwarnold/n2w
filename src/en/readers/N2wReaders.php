@@ -294,8 +294,8 @@ class N2wReaders implements N2wReadersInterface
      */
     private final function rinseWorkhorses()
     { // N2wReaders::rinseWorkhorses();
-        $this->challenge_packets['refined_packets_r'] = [];
-        $this->challenge_packets['raw_packets_r'] = [];
+        $this->challenge_packets = [];
+        $this->solution_packets = [];
     } // N2wReaders::rinseWorkhorses();
 
 
@@ -310,7 +310,7 @@ class N2wReaders implements N2wReadersInterface
         $_packets = explode($this->thousands_separator, $this->characteristic);
         // remember to reset the raw packets
        // empty($this->challenge_packets['raw_packets_r']);
-
+        $this->rinseWorkhorses();
         $this->challenge_packets['raw_packets_r'] = $_packets;
         $_packets_r = array_reverse($_packets);
         // build the dynamic schema of challenge_packets
