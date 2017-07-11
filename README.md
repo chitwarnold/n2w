@@ -28,7 +28,35 @@ composer require chitwarnold/n2w
 or add
 
 ```json
-"chitwarnold/ais": "~1.0.2",
+"chitwarnold/ais": "~1.0.4",
 ```
 
 to the require section of your composer.json.
+
+
+Demonstration
+---------------
+
+```
+#import the libraries
+use chitwarnold\n2w\en\N2w;
+use chitwarnold\n2w\en\readers\N2wReaders;
+
+
+# get some spellcheck done
+$_spelling_bee = new N2w();
+$decimal_point  = 2;
+$start = 100;
+$stop = 200;
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
+echo "| Range Counting challenge From $start to $stop |".PHP_EOL;
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
+
+
+for($i = $start; $i <= $stop; $i++)
+{
+    $spell = $_spelling_bee->updateChallenge($i,$decimal_point)->spell();
+    echo "$i."." ".$spell.PHP_EOL;
+}
+
+```
