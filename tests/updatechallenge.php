@@ -28,21 +28,37 @@ use chitwarnold\n2w\en\readers\N2wReaders;
  *     $ php zumatest.php
  * # feel free to to update the
  *
- * @todo implement threads on this to ensure it does take up too much memory for long tasks
+ *
  *
  */
 
 $_spelling_bee = new N2w();
+$number_to_spell = 2000000000200000 ;// two quadrillion,
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
+echo "| First challenge is $number_to_spell |".PHP_EOL;
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
 $decimal_point  = 2;
-$start = 100;
-$stop = 200;
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
-echo "| Range Counting challenge From $start to $stop |".PHP_EOL;
-echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
+$solution = $_spelling_bee->solve($number_to_spell,$decimal_point);
+echo $solution.PHP_EOL;
+echo "++++++++++++++++++++++++++++++++++++".PHP_EOL;
+echo "| updating challenge to 500,000.00 |".PHP_EOL;
+echo "++++++++++++++++++++++++++++++++++++".PHP_EOL;
+$challenge_update = 500000;
+$_spelling_bee2 = new N2w();
+$solutions = $_spelling_bee2->solve($challenge_update,$decimal_point);
+$_spelling_bee->updateChallenge($challenge_update,$decimal_point);
+$_spelling_bee_introspector_r = $_spelling_bee->spellingBee();
+$introspected_challenge = $_spelling_bee_introspector_r['challenge'];
+$introspected_solution = $_spelling_bee_introspector_r['solution'];
+$introspected_dp = $_spelling_bee_introspector_r['dp'];
+$introspected_sp = $_spelling_bee_introspector_r['spelling'];
+$introspected_rv = $_spelling_bee_introspector_r['reader_value'];
+$introspected_rdump = $_spelling_bee_introspector_r['rd_dump'];
 
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
+echo "| challenge: $introspected_challenge ,dp : $introspected_dp|".PHP_EOL;
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++".PHP_EOL;
+echo "Updated Value to : ".$introspected_rv.PHP_EOL;
+echo "spelling bee 2 : ".$solutions.PHP_EOL;
+var_dump($introspected_rdump);
 
-for($i = $start; $i <= $stop; $i++)
-{
-    $spell = $spelling_bee->updateChallenge($i,$decimal_point)->spell();
-    echo "$i."." ".$spell;
-}
