@@ -131,9 +131,17 @@ class N2w
     public function updateChallenge($challenge,$desired_decimal_points)
     {// N2w::updateChallenge();
         $this->_challenge = $challenge;
-        $this->_desired_decimal_points;
-
+        $this->_desired_decimal_points = $desired_decimal_points;
+        return $this;
     } // N2w::updateChallenge();
+
+    /**
+     * allows us to spell the current number
+     */
+    public function spell()
+    {//  N2w::spell();
+        return $this->getSpelling();
+    }// N2w::spell();
 
 
 
