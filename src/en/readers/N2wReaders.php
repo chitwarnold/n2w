@@ -289,6 +289,17 @@ class N2wReaders implements N2wReadersInterface
 
 
     /**
+     * rinse old values if they exist on the work horses
+     * return void
+     */
+    private final function rinseWorkhorses()
+    { // N2wReaders::rinseWorkhorses();
+        $this->challenge_packets['refined_packets_r'] = [];
+        $this->challenge_packets['raw_packets_r'] = [];
+    } // N2wReaders::rinseWorkhorses();
+
+
+    /**
      * generates the packets array for the  characteristic of the this object
      * allowing us to  know the place value character width  for the charactericts
      * @return void
@@ -297,6 +308,9 @@ class N2wReaders implements N2wReadersInterface
     { // N2w::genPackets();
 
         $_packets = explode($this->thousands_separator, $this->characteristic);
+        // remember to reset the raw packets
+       // empty($this->challenge_packets['raw_packets_r']);
+
         $this->challenge_packets['raw_packets_r'] = $_packets;
         $_packets_r = array_reverse($_packets);
         // build the dynamic schema of challenge_packets
@@ -673,6 +687,18 @@ class N2wReaders implements N2wReadersInterface
 
 
     } // announcePacket
+
+    /**
+     * testing the announcement of the packets, once an update is run
+     * @return array
+     */
+    public function getVars()
+    { // N2wReaders::getVars()
+        return [
+            'characteric' => $this->characteristic,
+             'mantisa' => $this->mantisa,
+        ];
+    } // N2wReaders::getVars()
 
 # SPEAK
 

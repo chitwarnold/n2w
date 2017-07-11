@@ -73,11 +73,19 @@ class N2w
      *
      * @param numeric $challenge - a string that can be cast to a floating point number  to be resolved to words
      * @param int $desired_decimal_points - desired number of decimal places
-     * @return string - the words that spell the number challenge
+     * @return array - of the artifacts - the words that spell the number challenge
      * @todo
      */
-    public static function spellingBee()
+    public  function spellingBee()
     { // N2w::spellingBee();
+        return [
+            'challenge' => $this->_challenge,
+            'dp' => $this->_desired_decimal_points,
+            'solution' => $this->getSpelling(),
+            'spelling' => $this->_spelling,
+            'rd_dump' => $this->_reader->getVars(),
+            'reader_value' => $this->_reader->spell( $this->_challenge,$this->_desired_decimal_points)
+        ];
 
     } // N2w::spellingBee();
 
