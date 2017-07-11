@@ -122,4 +122,19 @@ class N2w
      } // N2w::solve();
 
 
+    /**
+     * api for updating the challenge and desired decimal properties values on this object
+     * @param numeric $challenge - a string that can be cast to a floating point number  to be resolved to words
+     * @param int $desired_decimal_points - desired number of decimal places
+     * @return string - the words that spell the number challenge
+     */
+    public function updateChallenge($challenge,$desired_decimal_points)
+    {// N2w::updateChallenge();
+        $this->_challenge = $challenge;
+        $this->_desired_decimal_points;
+
+    } // N2w::updateChallenge();
+
+
+
 } // N2w : close class
