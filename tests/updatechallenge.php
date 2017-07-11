@@ -36,7 +36,11 @@ $_spelling_bee = new N2w();
 $number_to_spell = 2000000000200000 ;// two quadrillion,
 $decimal_point  = 2;
 $solution = $_spelling_bee->solve($number_to_spell,$decimal_point);
-echo "++++++++++++++++++++++++++++++++++++";
-echo "| updating challenge to 500,000.00 |";
-echo "++++++++++++++++++++++++++++++++++++";
 echo $solution.PHP_EOL;
+echo "++++++++++++++++++++++++++++++++++++".PHP_EOL;
+echo "| updating challenge to 500,000.00 |".PHP_EOL;
+echo "++++++++++++++++++++++++++++++++++++".PHP_EOL;
+$challenge_update = 500000;
+$_spelling_bee->updateChallenge($challenge_update,$decimal_point);
+echo "Updated Value to : ".$_spelling_bee->spell().PHP_EOL;
+
