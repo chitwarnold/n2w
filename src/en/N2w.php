@@ -67,6 +67,21 @@ class N2w
     } // N2w::setReader();
 
 
+    /**
+     * statically spells everything without all the set up
+     *  will automatically call the {languages} default reader -- en
+     *
+     * @param numeric $challenge - a string that can be cast to a floating point number  to be resolved to words
+     * @param int $desired_decimal_points - desired number of decimal places
+     * @return string - the words that spell the number challenge
+     * @todo
+     */
+    public static function spellingBee()
+    { // N2w::spellingBee();
+
+    } // N2w::spellingBee();
+
+
 
     /**
      * n2w factory method
